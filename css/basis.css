@@ -48,7 +48,7 @@ h1 img {
 }
 /* 메뉴 */
 nav {
-  width: 424px;
+  width: 460px;
   height: auto;
   margin-left: auto;
 }
@@ -59,6 +59,7 @@ nav > ul {
   justify-content: space-between;
   text-align: center;
   line-height: 100px;
+  gap: 16px;
 }
 nav ul::after {
   content: "background color";
@@ -77,6 +78,7 @@ nav ul::after {
 }
 nav > ul > li {
   position: relative;
+  flex: 1;
 }
 nav > ul > li > a {
   display: inline-block;
@@ -106,6 +108,7 @@ nav > ul > li > a:hover {
 .submenu > li > a {
   position: relative;
   z-index: 6;
+  font-size: 15px;
 }
 
 nav ul li .submenu {

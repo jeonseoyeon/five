@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+main {
+  width: 100%;
+  height: 3171px; /*임의적으로 높이 설정 나중에 바꾸기*/
+  position: relative;
+  top: 100px; /*해더 겹쳐져서 해더 크기만큼 아래로 내림*/
+}
+.banner {
+  width: 100%;
+  height: 200px;
+  background-image: url(./../img/sub_goods/banner2.png);
+  background-repeat: no-repeat;
+  font-size: 30px;
+  line-height: 180%;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 46px;
+}
+.banner .banner_text {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner_text h3 {
+  font-weight: 600;
+}
+/* 섹션 컨텐츠 영역 공통지정 */
+section {
+  width: 1600px;
+  margin: 0 auto;
+  height: auto;
+}
+/* 섹션1 메뉴바 */
+.menu {
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+.menu ul {
+  display: flex;
+  column-gap: 40px;
+}
+.menu li a {
+  display: block;
+  width: fit-content;
+  height: 32px;
+  font-size: 20px;
+  color: #888;
+}
+.menu ul li:first-child a {
+  color: #000;
+  border-bottom: 2px solid #222;
+}
+/* 섹션2 */
+.goods {
+  width: 1600px;
+  margin: 0 auto;
+}
+.sect2_text_top {
+  width: 100%;
+  height: 28px;
+  font-size: 16px;
+  position: relative;
+}
+.text_left {
+  position: absolute;
+  left: 0;
+}
+.text_left span {
+  color: #4877ce;
+}
+.goods button {
+  position: absolute;
+  right: 0;
+  padding: 0 22px 0 0;
+  background-image: url(./../img/icon/updown.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  background-color: transparent;
+  font-family: "S-CoreDream-3Light";
+  font-size: 16px;
+  cursor: pointer;
+}
+.small_menu {
+  z-index: 1;
+  width: 4%;
+  margin-top: 11px;
+  padding: 18px;
+  border: 1px solid #333;
+  background: #fff;
+  /* font-weight: 600; */
+  line-height: 190%;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  top: 18px;
+  text-align: left;
+}
+.small_menu li a {
+  font-size: 14px;
+  color: #929292;
+}
+.small_menu li {
+  font-size: 14px;
+}
+/* 굿즈 컨텐츠 */
+.goods_bigcon {
+  width: 100%;
+  height: auto;
+  margin-top: 45px;
+  background-color: lavender;
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 53px; */
+  justify-content: space-between;
+  row-gap: 90px;
+}
+.goods_con {
+  width: fit-content;
+}
+.goods_img {
+  width: 360px;
+  height: fit-content;
+}
+.goods_img img {
+  max-width: 100%;
+}
+.goods_inner_text {
+  width: 360px;
+  background-color: #fff;
+  position: relative;
+}
+.goods_inner_text h4 {
+  font-size: 15px;
+  color: #777;
+}
+.goods_inner_text h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.goods_inner_text .price {
+  font-size: 18px;
+  color: #6590df;
+  font-weight: 600;
+  margin-top: 32px;
+}
+.goods_inner_text h5 {
+  color: #898989;
+  font-size: 14px;
+}
+.goods_inner_text h5::before {
+  display: inline-block;
+  content: "별점 아이콘";
+  font-size: 0;
+  width: 20px;
+  height: 19px;
+  background: url(./../img/sprites.png) -234px -206px;
+  position: relative;
+  top: -2px;
+  margin-right: 3px;
+}
+.heart {
+  width: 22px;
+  height: 20px;
+  background: url(./../img/sprites.png) -152px -206px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}

@@ -328,14 +328,25 @@ h2 {
   justify-content: space-between;
   column-gap: 24px;
 }
-.goods_inner_box img {
+.goods_img2 {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+.goods_img2 img {
+  max-width: 100%;
   cursor: pointer;
+  transition: 0.5s;
+}
+.goods_img2:hover img {
+  transform: scale(1.08, 1.08);
 }
 .goods_t {
   width: fit-content;
   height: fit-content;
   text-align: left;
   line-height: 150%;
+  margin-top: 5px;
 }
 .goods_t h4 {
   font-size: 13px;
