@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다섯시</title>
+    <link rel="stylesheet" href="./../css/basis.css" />
+    <link rel="stylesheet" href="./../css/style_login.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header>
+        <div class="header_wrap">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="./../img/logo2.png" alt="로고" /></a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="#">그림책</a>
+                <ul class="submenu">
+                  <li><a href="#">글 없는 그림책</a></li>
+                  <li><a href="#">팝업북</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./../sub/sub_goods.html">굿즈</a>
+                <ul class="submenu">
+                  <li><a href="./../sub/sub_goods.html">콜라보 굿즈</a></li>
+                  <li><a href="#">굿즈 펀딩</a></li>
+                  <li><a href="#">배경화면</a></li>
+                </ul>
+              </li>
+              <li><a href="./../sub/sub_funding.html">그림책 펀딩</a></li>
+              <li>
+                <a href="#">문의</a>
+                <ul class="submenu">
+                  <li><a href="#">판매 등록 신청</a></li>
+                  <li><a href="#">상품Q&amp;A</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- 아이콘-->
+          <div class="icons">
+            <a href="./sub/sub_login.html"><div class="login"></div></a>
+            <a href="#"><div class="search"></div></a>
+            <a href="#"><div class="shopping"></div></a>
+          </div>
+        </div>
+      </header>
+      <!-- 섹션 -->
+      <main>
+        <div class="login_con">
+          <h2>로그인</h2>
+          <form action="#" method="post" id="member_form" class="member">
+            <div class="top_text">
+              <a href="./sub_login.html">회원 로그인</a>
+              <a href="#">비회원 주문조회</a>
+            </div>
+            <div class="user_list">
+              <!-- 아이디-->
+              <div class="user_info">
+                <label for="user_id"
+                  ><input
+                    class="info1"
+                    type="text"
+                    name="user_id"
+                    id="user_id"
+                    placeholder="아이디"
+                    required
+                    minlength="5"
+                    maxlength="12"
+                    autofocus
+                /></label>
+              </div>
+              <!-- 비밀번호 -->
+              <div class="user_info">
+                <label for="user_pw">
+                  <input
+                    class="info1"
+                    type="password"
+                    name="user_pw"
+                    id="user_pw"
+                    placeholder="비밀번호 영문 + 특수문자 조합"
+                    required
+                    minlength="6"
+                    maxlength="10"
+                  />
+                </label>
+              </div>
+              <div class="id_save">
+                <label
+                  ><input type="checkbox" name="check" id="check" /><span
+                    class="check_text"
+                    >아이디 저장</span
+                  ></label
+                >
+              </div>
+              <button type="submit" class="btn_login">로그인</button>
+              <div class="text_con">
+                <a href="#">회원가입</a>
+                <a href="#">아이디 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+              </div>
+              <div class="bottom_con">
+                <div class="another">
+                  <a href="#"
+                    ><img src="./../img/sub_login/kakao_icon.png" alt="카카오"
+                  /></a>
+                  <h5>카카오 로그인</h5>
+                </div>
+                <div class="another">
+                  <a href="#"
+                    ><img src="./../img/sub_login/naver_icon.png" alt="네이버"
+                  /></a>
+                  <h5>네이버 로그인</h5>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <!-- 푸터 -->
+      <footer>
+        <div class="footer_con">
+          <div class="footer_logo">
+            <img src="./../img/footer_LOGO.png" alt="푸터로고 " />
+          </div>
+          <div class="footer_t1">
+            주식회사 다섯시<br />
+            T. 02-529-0156<br />
+            평일 10AM-6AM | 주말 및 공휴일 휴무<br />
+            &copy;Five o’clock. All Rights Reserved.
+          </div>
+          <div class="footer_t2">
+            이용약관<br />
+            개인정보처리방침<br />
+            청소년 보호정책<br />
+            통신판매신고업번호
+          </div>
+          <div class="footer_t3">
+            입점안내<br />
+            <span>고객센터 1544-3412</span><br />
+            카카오톡 문의<br />
+            Instagram<br />
+          </div>
+          <!-- 업버튼 자바스크립트로 수정? -->
+          <a href="/" class="up_button"></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

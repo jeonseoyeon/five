@@ -98,7 +98,7 @@ section {
   margin-top: 5px;
 }
 .hot_inner_text h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .hot_inner_text h4:last-of-type {
@@ -126,7 +126,7 @@ section {
   font-weight: 600;
 }
 .inner_bottom_text .money {
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 10px;
   color: #6590df;
 }
