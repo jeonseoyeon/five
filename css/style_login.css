@@ -11,13 +11,12 @@ main {
   height: 609px;
   margin: 155px auto;
   /* background-color: lightpink; */
-  /* text-align: center; */
+  text-align: center;
 }
 .login_con h2 {
   font-size: 26px;
   font-weight: 800;
   margin-bottom: 70px;
-  text-align: center;
 }
 form {
   width: 100%;
@@ -29,7 +28,6 @@ form {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  text-align: center;
 }
 .top_text a {
   display: block;
@@ -41,8 +39,8 @@ form {
   border-bottom: 2px solid #222;
 }
 .top_text a:last-child {
-  font-weight: 600;
   border-bottom: 2px solid #cccccc;
+  color: #777;
 }
 .user_list {
   width: 100%;
@@ -82,6 +80,7 @@ span {
 .id_save {
   width: 100%;
   margin-top: 13px;
+  text-align: left;
 }
 button {
   width: 100%;

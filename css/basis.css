@@ -151,9 +151,11 @@ nav ul:hover .submenu {
 }
 .login {
   background-position: -10px -258px;
+  margin-top: 2px;
 }
 .search {
   background-position: -194px -206px;
+  margin-top: 2px;
 }
 .shopping {
   background-position: -108px -206px;
