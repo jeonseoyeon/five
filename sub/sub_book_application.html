@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다섯시</title>
+    <link rel="stylesheet" href="./../css/basis.css" />
+    <link rel="stylesheet" href="./../css/style_application.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header>
+        <div class="header_wrap">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="./../img/logo2.png" alt="로고" /></a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="#">그림책</a>
+                <ul class="submenu">
+                  <li><a href="#">글 있는 그림책</a></li>
+                  <li><a href="#">글 없는 그림책</a></li>
+                  <li><a href="#">팝업북</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./../sub/sub_goods.html">굿즈</a>
+                <ul class="submenu">
+                  <li><a href="./../sub/sub_goods.html">콜라보 굿즈</a></li>
+
+                  <li><a href="#">그림 배경화면</a></li>
+                </ul>
+              </li>
+              <li><a href="./../sub/sub_funding.html">그림책 펀딩</a></li>
+              <li>
+                <a href="./sub_book_application.html">문의</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="./sub_book_application.html">판매 등록 신청</a>
+                  </li>
+                  <li><a href="#">상품 Q&amp;A</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- 아이콘-->
+          <div class="icons">
+            <a href="./../sub/sub_login.html"><div class="login"></div></a>
+            <a href="#"><div class="search"></div></a>
+            <a href="#"><div class="shopping"></div></a>
+          </div>
+        </div>
+      </header>
+      <!-- 섹션 -->
+      <main>
+        <!-- 배너 -->
+        <section class="banner">
+          <div class="banner_text">
+            <h2>독립출판한 그림책이 있으신가요?</h2>
+            <h3>다섯시에서 사람들과 함께 나눠보세요</h3>
+          </div>
+        </section>
+        <div class="innerwrap">
+          <div class="top_text">
+            <h2>그림책 판매 등록 신청</h2>
+            <h4>필수입력</h4>
+          </div>
+          <form action="#" method="post" name="application">
+            <!-- 박스1 -->
+            <div class="user_info">
+              <h3 class="red">작가 정보</h3>
+              <div class="inner_info">
+                <!-- 인풋1 -->
+                <div class="info1">
+                  <label for="people_name">이름</label>
+                  <input
+                    type="text"
+                    id="people_name"
+                    name="people_name"
+                    placeholder="활동하시는 작가명으로 적어주세요."
+                  />
+                </div>
+                <!-- 인풋2 -->
+                <div class="info2">
+                  <label for="people_num">연락처</label>
+                  <input
+                    type="text"
+                    id="people_num"
+                    name="people_num"
+                    placeholder="휴대전화번호(-없이 숫자만 입력)"
+                  />
+                </div>
+                <!-- 인풋3 -->
+                <div class="info3">
+                  <label for="people_mail">이메일</label>
+                  <input
+                    type="email"
+                    id="people_mail"
+                    name="people_mail"
+                    placeholder="이메일을 입력해주세요"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 박스2 -->
+            <div class="user_info">
+              <h3 class="red2">책 정보</h3>
+              <div class="inner_info">
+                <!-- 인풋1 -->
+                <div class="info1">
+                  <label for="book_name">책 이름</label>
+                  <input
+                    type="text"
+                    id="book_name"
+                    name="book_name"
+                    placeholder="홍길동전"
+                  />
+                </div>
+                <!-- 인풋2 -->
+                <div class="info2">
+                  <label for="book_price">책 가격</label>
+                  <input
+                    type="text"
+                    id="book_price"
+                    name="book_price"
+                    placeholder="000원"
+                  />
+                </div>
+                <!-- 인풋3 -->
+                <div class="info3">
+                  <label for="book_info">간략한 책 소개</label>
+                  <input
+                    type="text"
+                    id="book_info"
+                    name="book_info"
+                    placeholder="최대 2줄. 간단한 줄거리로 들어갈 내용입니다."
+                  />
+                </div>
+                <!-- 인풋4 -->
+                <div class="info4">
+                  <label for="book_info2">책 내용</label>
+                  <input
+                    type="text"
+                    id="book_info2"
+                    name="book_info2"
+                    placeholder="최대 10줄까지 적어주세요"
+                  />
+                </div>
+                <!-- 인풋5 -->
+                <div class="info5">
+                  <label for="upload_img"
+                    >표지 및 대표 삽화 이미지 첨부
+                    <div class="btn-upload">파일 업로드</div></label
+                  >
+                  <input
+                    type="file"
+                    accept="image/jpg, image/png"
+                    id="upload_img"
+                    name="upload_img"
+                    multiple
+                  />
+                  <h5>첨부파일은 jpg,png로 최대 4개 업로드 가능</h5>
+                </div>
+              </div>
+            </div>
+            <!-- 박스3 -->
+            <div class="user_info">
+              <h3>기타</h3>
+              <div class="inner_info">
+                <!-- 인풋1 -->
+                <div class="info3">
+                  <label for="add">SNS</label>
+                  <input
+                    type="text"
+                    id="add"
+                    name="add"
+                    placeholder="유튜브, 인스타그램 등 홍보수단이 있다면 알려주세요"
+                  />
+                </div>
+                <!-- 인풋2 -->
+                <div class="info3">
+                  <label for="add2">수상내역</label>
+                  <input
+                    type="text"
+                    id="add2"
+                    name="add2"
+                    placeholder="2024년 00그림책 공모전 수상, 00작가상 수상 등"
+                  />
+                </div>
+                <!-- 인풋3 -->
+                <div class="info3">
+                  <label for="add3">출판했던 책</label>
+                  <input
+                    type="text"
+                    id="add3"
+                    name="add3"
+                    placeholder="책 제목 / 출판년도 / 출판사"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 개인정보 수집 동의 -->
+            <div class="bottom_box">
+              <h3 class="red3">개인정보 수집 및 이용 동의</h3>
+              <div class="box">
+                <h4>개인정보 처리 방침</h4>
+                <p>
+                  - 처리목적: 서비스 제공관련 고객 상담, 문의사항 확인 및 처리,
+                  고객 연락 등<br />
+                  - 처리(수집) 항목: 이름, 연락처, 이메일, SNS<br />
+                  - 보유기간: 목적 달성 시까지<br />
+                  * 상기의 개인정보 수집 및 이용을 거부하실 수 있으나,
+                  거부하시는 경우 서비스 이용이 불가합니다.
+                </p>
+              </div>
+              <div class="box2">
+                <label for="check">
+                  <input type="checkbox" />개인정보 수집 및 이용에 동의합니다.
+                </label>
+              </div>
+              <div class="box3">
+                <label for="check">
+                  <input type="checkbox" />만 14세 이상입니다.
+                </label>
+              </div>
+              <button type="submit">그림책 판매 등록 신청하기</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <!-- 푸터 -->
+      <footer>
+        <div class="footer_con">
+          <div class="footer_logo">
+            <img src="./../img/footer_LOGO.png" alt="푸터로고 " />
+          </div>
+          <div class="footer_t1">
+            주식회사 다섯시<br />
+            T. 02-529-0156<br />
+            평일 10AM-6AM | 주말 및 공휴일 휴무<br />
+            &copy;Five o’clock. All Rights Reserved.
+          </div>
+          <div class="footer_t2">
+            이용약관<br />
+            개인정보처리방침<br />
+            청소년 보호정책<br />
+            통신판매신고업번호
+          </div>
+          <div class="footer_t3">
+            입점안내<br />
+            <span>고객센터 1544-3412</span><br />
+            카카오톡 문의<br />
+            Instagram<br />
+          </div>
+          <!-- 업버튼 자바스크립트로 수정? -->
+          <a href="/" class="up_button"></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -76,6 +76,7 @@ input::placeholder {
 span {
   font-size: 14px;
   color: #606060;
+  margin-left: 4px;
 }
 .id_save {
   width: 100%;

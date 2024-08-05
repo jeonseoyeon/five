@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+main {
+  width: 100%;
+  height: 1910px;
+  position: relative;
+  top: 100px; /*해더 겹쳐져서 해더 크기만큼 아래로 내림*/
+}
+/* 배너 */
+.banner {
+  width: 100%;
+  height: 200px;
+  background-image: url(./../img/sub_application/banner.png);
+  background-repeat: no-repeat;
+  font-size: 30px;
+  line-height: 180%;
+  color: #162f5d;
+  box-sizing: border-box;
+  padding: 46px;
+  margin-bottom: 90px;
+}
+.banner .banner_text {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner_text h3 {
+  font-weight: 600;
+}
+.innerwrap {
+  width: 820px;
+  height: fit-content;
+  margin: 0 auto;
+}
+.top_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+.top_text h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.top_text h4 {
+  font-size: 14px;
+  position: relative;
+}
+.top_text h4::before {
+  content: "●";
+  font-size: 6px;
+  color: #ff2727;
+  position: absolute;
+  top: -3px;
+  left: -10px;
+}
+form {
+  width: 100%;
+  height: fit-content;
+  /* background-color: beige; */
+}
+/* 박스 */
+.user_info {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 69px;
+}
+/* h3 공통속성 */
+form h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  position: relative;
+}
+.red::after {
+  content: "●";
+  font-size: 6px;
+  color: #ff2727;
+  position: absolute;
+  top: -5px;
+  left: 85px;
+}
+/* div 공통 속성 */
+.inner_info div {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+/* input 공통 속성 */
+.user_info input {
+  margin-left: 20px;
+  height: 60%;
+  width: 70%;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  font-size: 15px;
+  font-family: "S-CoreDream-3Light";
+  color: #8a8a8a;
+}
+.inner_info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info1 {
+  width: 45%;
+  height: 52px;
+}
+.info2 {
+  width: 45%;
+  height: 52px;
+}
+.info3,
+.info4 {
+  width: 100%;
+  height: 52px;
+}
+/* 박스2 */
+.red2::after {
+  content: "●";
+  font-size: 6px;
+  color: #ff2727;
+  position: absolute;
+  top: -5px;
+  left: 66px;
+}
+.inner_info .info5 {
+  width: 100%;
+  flex-wrap: wrap;
+  border-bottom: none;
+  margin-top: 10px;
+}
+.info5 label {
+  width: 100%;
+}
+.info5 h5 {
+  font-size: 13px;
+  color: #8a8a8a;
+}
+/* 파일 업로드 버튼 */
+.btn-upload {
+  width: 350px;
+  height: 52px;
+  border: 1px solid #dddddd;
+  color: #8a8a8a;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+/* 기존 인풋 file은 숨기기 */
+#upload_img {
+  display: none;
+}
+/* 개인정보수집동의 */
+.bottom_box {
+  width: 100%;
+  height: fit-content;
+}
+.box {
+  width: 100%;
+  height: 180px;
+  /* border: 1px solid #dddddd; */
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #777;
+  box-sizing: border-box;
+  padding: 18px 20px;
+  margin: 10px 0;
+}
+.box h4 {
+  color: #000;
+  font-weight: 600;
+}
+.bottom_box label {
+  font-size: 16px;
+}
+.bottom_box input {
+  margin-right: 8px;
+}
+.red3::after {
+  content: "●";
+  font-size: 6px;
+  color: #ff2727;
+  position: absolute;
+  top: -5px;
+  left: 237px;
+}
+.bottom_box button {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #7594cd;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50px;
+  font-family: "S-CoreDream-3Light";
+  border: none;
+  margin-top: 80px;
+  margin-bottom: 137px;
+  position: relative;
+  left: 50%;
+  margin-left: -160px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.bottom_box button:hover {
+  background-color: #507bca;
+}
