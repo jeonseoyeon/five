@@ -87,6 +87,7 @@ form h3 {
   align-items: center;
   border-bottom: 1px solid #dddddd;
 }
+
 /* input 공통 속성 */
 .user_info input {
   margin-left: 20px;
@@ -146,7 +147,7 @@ input::placeholder {
   width: 350px;
   height: 52px;
   border: 1px solid #dddddd;
-  color: #8a8a8a;
+  color: #5e5e5e;
   border-radius: 30px;
   cursor: pointer;
   display: flex;
