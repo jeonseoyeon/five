@@ -2,7 +2,7 @@
 
 main {
   width: 100%;
-  height: 3171px;
+  height: 3140px;
   position: relative;
   top: 100px; /*해더 겹쳐져서 해더 크기만큼 아래로 내림*/
 }
@@ -61,6 +61,7 @@ section {
   height: 300px;
   width: 440px;
   overflow: hidden; /*확대되면 넘치는 부분 잘라내기*/
+  cursor: pointer;
 }
 .hot_img img {
   max-height: 100%;
@@ -107,7 +108,7 @@ section {
 .heart {
   width: 22px;
   height: 20px;
-  background: url(./../img/sprites.png) -152px -206px;
+  background: url(./../img/sprites.png) -228px -245px;
   cursor: pointer;
   position: absolute;
   right: 0;
@@ -142,6 +143,7 @@ section {
 /* 섹션2 */
 .funding {
   margin-top: 30px;
+  margin-bottom: 67px;
 }
 .sect2_text_top {
   width: 100%;
@@ -156,40 +158,25 @@ section {
 .text_left span {
   color: #4877ce;
 }
-.funding button {
+.text_right {
   position: absolute;
   right: 0;
-  padding: 0 22px 0 0;
-  background-image: url(./../img/icon/updown.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  border: none;
-  background-color: transparent;
-  font-family: "S-CoreDream-3Light";
-  font-size: 16px;
-  cursor: pointer;
+  display: flex;
 }
-.small_menu {
-  z-index: 1;
-  width: 4%;
-  margin-top: 11px;
-  padding: 18px;
-  border: 1px solid #333;
-  background: #fff;
-  /* font-weight: 600; */
-  line-height: 190%;
-  height: 120px;
-  position: absolute;
-  right: 0;
-  top: 18px;
-  text-align: left;
+.text_right a {
+  display: flex;
 }
-.small_menu li a {
-  font-size: 14px;
-  color: #929292;
+/* .text_right a:first-child {
+  font-weight: 600;
+} */
+.text_right a:not(:first-child) {
+  color: #989898;
 }
-.small_menu li {
-  font-size: 14px;
+.menu_bar::after {
+  display: block;
+  content: "|";
+  color: #888;
+  margin: 0px 8px;
 }
 .funding_inner {
   width: 100%;
@@ -217,13 +204,13 @@ section {
 .left_back_icon {
   width: 7px;
   height: 11px;
-  background: url(./../img/sprites.png) -289px -95px;
+  background: url(./../img/sprites.png) -354px -181px;
   cursor: pointer;
 }
 .right_back_icon {
   width: 7px;
   height: 11px;
-  background: url(./../img/sprites.png) -289px -64px;
+  background: url(./../img/sprites.png) -202px -206px;
   cursor: pointer;
 }
 .num_text {

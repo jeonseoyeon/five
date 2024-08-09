@@ -140,7 +140,7 @@ nav ul:hover .submenu {
   height: 24px;
   display: flex;
   padding: 38px 0;
-  column-gap: 24px;
+  column-gap: 28px;
   margin-left: 60px;
 }
 .icons > a {
@@ -155,15 +155,13 @@ nav ul:hover .submenu {
   background-repeat: no-repeat;
 }
 .login {
-  background-position: -10px -258px;
-  margin-top: 2px;
+  background-position: -98px -245px;
 }
 .search {
-  background-position: -194px -206px;
-  margin-top: 2px;
+  background-position: -10px -245px;
 }
 .shopping {
-  background-position: -108px -206px;
+  background-position: -54px -245px;
 }
 /* 푸터 */
 footer {
@@ -209,6 +207,6 @@ footer {
   display: block;
   width: 55px;
   height: 55px;
-  background: url(./../img/sprites.png) -171px -129px;
+  background: url(./../img/sprites.png) -309px -10px;
   cursor: pointer;
 }

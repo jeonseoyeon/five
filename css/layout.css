@@ -238,7 +238,7 @@ h2 {
   background-image: url(./../img/sprites.png);
   width: 33px;
   height: 32px;
-  background-position: -10px -206px;
+  background-position: -309px -85px;
   margin-bottom: 25px;
 }
 .gift_con {
@@ -285,13 +285,13 @@ h2 {
 .sect5_icon .shopping_icon {
   width: 25px;
   height: 24px;
-  background: url(./../img/sprites.png) -63px -206px;
+  background: url(./../img/sprites.png) -309px -181px;
   cursor: pointer;
 }
 .sect5_icon .heart {
   width: 22px;
   height: 20px;
-  background: url(./../img/sprites.png) -152px -206px;
+  background: url(./../img/sprites.png) -228px -245px;
   cursor: pointer;
 }
 /* 섹션6 */
