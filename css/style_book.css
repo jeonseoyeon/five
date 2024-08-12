@@ -140,23 +140,80 @@ h2 {
   width: 270px;
   height: 431px;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   box-sizing: border-box;
-  padding: 30px;
   font-size: 16px;
   color: #fff;
+  transition: 0.3s;
+  /* 이미지 숨겨놓음 */
+  opacity: 0;
 }
-.hide_img .hover_icons {
-  position: absolute;
-  background-color: lightblue;
+.hide_img p {
   width: fit-content;
   height: fit-content;
-  bottom: 30px;
-  left: 80px;
+  margin: 30px;
+}
+.hide_img .hover_icons {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  margin-top: 168px;
 }
 .hover_icons button {
-  background-color: rebeccapurple;
   border: none;
-  margin: 0px 14px;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* 호버하면 숨겨진 줄거리 나오기 */
+.best_con:hover .hide_img {
+  opacity: 1;
+}
+/* 섹션2 */
+.five_book {
+  width: 100%;
+  height: 705px;
+  margin-top: 154px;
+  background-image: url(./../img/sub_book/sect2_background.png);
+}
+.five_inner {
+  width: 1600px;
+  height: 100%;
+  /* background-color: beige; */
+  margin: 0 auto;
+}
+.five_book_wrap {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 45px;
+}
+.five_book_con {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.five_book_img {
+  width: 321px;
+  height: fit-content;
+}
+.five_book_img img {
+  max-width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.five_book_txt {
+  width: 358px;
+  height: 183px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.five_book_txt h3 {
+  font-weight: 600;
+}
+.five_book_txt p {
+  font-size: 15px;
 }
