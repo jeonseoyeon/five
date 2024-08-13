@@ -2,7 +2,7 @@
 
 main {
   width: 100%;
-  height: 2438px;
+  height: 2378px;
   position: relative;
   top: 100px; /*해더 겹쳐져서 해더 크기만큼 아래로 내림*/
 }
@@ -136,7 +136,7 @@ section {
   font-size: 16px;
   color: #6590df;
   font-weight: 600;
-  margin-top: 32px;
+  margin-top: 10px;
 }
 .goods_inner_text h5 {
   color: #898989;
@@ -189,7 +189,7 @@ section {
 }
 .buttom_num .num_text a {
   display: block;
-  width: 24px;
+  width: 28px;
   text-align: center;
   color: #aaa;
 }
