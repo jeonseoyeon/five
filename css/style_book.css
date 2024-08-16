@@ -369,6 +369,9 @@ h2 {
 .num_text a:first-child {
   color: #000;
 }
+.buttom_num .num_text a:hover {
+  color: #000;
+}
 /* 섹션 5*/
 .banner2 {
   width: 100%;

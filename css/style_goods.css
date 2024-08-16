@@ -196,3 +196,6 @@ section {
 .num_text a:first-child {
   color: #000;
 }
+.num_text a:hover {
+  color: #000;
+}

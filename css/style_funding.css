@@ -222,6 +222,9 @@ section {
   text-align: center;
   color: #aaa;
 }
+.buttom_num .num_text a:hover {
+  color: #000;
+}
 .num_text a:first-child {
   color: #000;
 }
