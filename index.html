@@ -50,11 +50,40 @@
           <!-- 아이콘-->
           <div class="icons">
             <a href="./sub/sub_login.html"><div class="login"></div></a>
-            <a href="#"><div class="search"></div></a>
+            <a href="#" onclick="showSearch()"><div class="search"></div></a>
             <a href="./sub/sub_shopping.html"><div class="shopping"></div></a>
           </div>
         </div>
       </header>
+      <!-- 검색창 -->
+      <form action="#" method="post" name="search_box" id="search_form">
+        <div class="search_con">
+          <!-- 검색바 -->
+          <div class="search_top_box">
+            <label for="search_bar">
+              <input type="text" name="search_bar" id="search_bar" autofocus />
+              <div class="search_icon">
+                <button type="button">
+                  <img src="./../img/icon/search_black.png" alt="돋보기" />
+                </button>
+              </div>
+            </label>
+          </div>
+          <!-- 인기검색어 -->
+          <div class="search_bottom_box">
+            <h3>인기 검색어</h3>
+            <div class="best_txt">
+              <p><span>1</span> 초록색 파도</p>
+              <p><span>2</span> 함께의 가치</p>
+              <p><span>3</span> 얼레벌레 키링</p>
+            </div>
+          </div>
+          <!-- X아이콘 -->
+          <button type="button" class="x_btn" onclick="hideSearch()">
+            <img src="./../img/icon/x_icon.png" alt="x" />
+          </button>
+        </div>
+      </form>
       <!-- 컨텐츠영역 -->
       <main>
         <section class="main_visual">
@@ -297,5 +326,7 @@
         </div>
       </footer>
     </div>
+    <!-- js -->
+    <script src="./js/javascript.js"></script>
   </body>
 </html>
