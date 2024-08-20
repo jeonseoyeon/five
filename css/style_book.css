@@ -244,6 +244,7 @@ h2 {
   padding: 52px;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 }
 .banner h3 {
   font-size: 22px;

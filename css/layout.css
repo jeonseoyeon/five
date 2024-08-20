@@ -228,6 +228,10 @@ h2 {
   width: fit-content;
   height: fit-content;
 }
+.gift_text h2 {
+  font-weight: 900;
+  font-size: 30px;
+}
 .gift_text p {
   margin-top: 60px;
   font-size: 20px;
@@ -322,11 +326,11 @@ h2 {
   margin-bottom: 40px;
 }
 .goods_inner_box {
-  width: 104%;
+  width: 795px;
   height: fit-content;
   display: flex;
   justify-content: space-between;
-  column-gap: 24px;
+  /* column-gap: 24px; */
 }
 .goods_img2 {
   width: 240px;
@@ -349,7 +353,7 @@ h2 {
   margin-top: 5px;
 }
 .goods_t h4 {
-  font-size: 13px;
+  font-size: 14px;
   color: #898989;
 }
 
