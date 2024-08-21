@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  .header_wrap {
+    width: 92%;
+  }
+  .main_visual {
+    background-position: center;
+  }
+  .main_visual_text {
+    left: 6%;
+  }
+  /* 섹션2*/
+  .sect2_innercon {
+    left: 6%;
+  }
+  .book1 {
+    left: -10%;
+  }
+  .book_text_box1 {
+    left: 20%;
+  }
+  .sect2_icon {
+    left: 81%;
+  }
+  .book_text_box2 {
+    left: 93%;
+  }
+  /* 섹션3 */
+  .sect3_innercon {
+    column-gap: 5%;
+  }
+  /* 섹션4 */
+  .sect4 {
+    background-position: center;
+  }
+  /* 섹션5 */
+  .sect5_innercon {
+    width: 92%;
+  }
+  .gift_text h2 {
+    font-size: 2.9vh;
+  }
+  .gift_text p {
+    font-size: 1.9vh;
+    margin-top: 40px;
+    line-height: 1.7;
+  }
+  .book9,
+  .book10 {
+    width: fit-content;
+    height: 320px;
+  }
+  .gift_img_t {
+    margin-left: 20px;
+  }
+  .gift_img_t h3 {
+    font-size: 2.3vh;
+  }
+  .gift_img_t h4,
+  .gift_img_t span {
+    font-size: 1.7vh;
+    margin-bottom: 20px;
+  }
+  .gift_img_t p {
+    font-size: 1.7vh;
+  }
+  /* 섹션6 */
+  .sect6_innercon {
+    width: 92%;
+  }
+  .goods_img {
+    /* height: 450px; */
+    height: 45vh;
+    margin-right: 2%;
+  }
+  .goods_right_box h2 {
+    font-size: 2.9vh;
+    margin-bottom: 20px;
+  }
+  .goods_inner_box {
+    width: 100%;
+  }
+  .goods_img2 {
+    width: 210px;
+    height: 210px;
+  }
+  .goods_t h5 {
+    margin-top: 26px;
+    font-size: 1.1vw;
+  }
+  .goods_t h3 {
+    font-size: 1.15vw;
+  }
+  .goods_t h4 {
+    font-size: 0.827vw;
+  }
+  /* 푸터 */
+  .footer_con {
+    width: 92%;
+  }
+}
+/* 노트북  medium */
+@media screen and (min-width: 1370px) and (max-width: 1439px) {
+  .header_wrap {
+    width: 92%;
+  }
+  .main_visual {
+    background-position: center;
+  }
+  .main_visual_text {
+    left: 6%;
+  }
+  .main_visual_text p {
+    font-size: 1.75vw;
+  }
+  .main_visual_text img {
+    width: 29vw;
+  }
+  /* 섹션2 */
+  .sect2_innercon {
+    left: 6%;
+  }
+  .book1 {
+    left: -10%;
+  }
+  .book_text_box1 {
+    left: 20%;
+  }
+  .sect2_icon {
+    left: 81%;
+  }
+  .book_text {
+    margin-left: 50px;
+  }
+  .book_text_box2 {
+    left: 93%;
+  }
+  .sect2_icon {
+    left: 79%;
+  }
+  .book_text_box2 {
+    left: 92%;
+  }
+  /* 섹션3 */
+  .sect3_innercon {
+    column-gap: 5%;
+  }
+  /* 섹션4 */
+  .sect4 {
+    background-position: center;
+  }
+  /* 섹션5 */
+  .sect5_innercon {
+    width: 92%;
+  }
+  .gift {
+    margin-bottom: 16px;
+  }
+  .gift_text h2 {
+    font-size: 2.64vh;
+  }
+  .gift_text p {
+    font-size: 1.8vh;
+    margin-top: 40px;
+    line-height: 1.7;
+  }
+  .book9,
+  .book10 {
+    width: fit-content;
+    height: 300px;
+  }
+  .gift_img_t {
+    margin-left: 16px;
+  }
+  .gift_img_t h3 {
+    font-size: 2vh;
+    margin-bottom: 12px;
+  }
+  .gift_img_t h4,
+  .gift_img_t span {
+    font-size: 1.7vh;
+    margin-bottom: 12px;
+  }
+  .gift_img_t p {
+    font-size: 1.7vh;
+  }
+  .gift_img_t h5 {
+    font-size: 1.8vh;
+    margin-top: 74px;
+  }
+  .sect5_icon {
+    margin-top: 8px;
+  }
+  /* 섹션6 */
+  .sect6_innercon {
+    width: 92%;
+  }
+  /* 섹션6 */
+  .sect6_innercon {
+    width: 92%;
+  }
+  .goods_img {
+    height: 42vh;
+    margin-right: 1.3%;
+  }
+  .goods_right_box h2 {
+    font-size: 2.9vh;
+    margin-bottom: 20px;
+  }
+  .goods_inner_box {
+    width: 100%;
+  }
+  .goods_img2 {
+    width: 200px;
+    height: 200px;
+  }
+  .goods_t h5 {
+    margin-top: 26px;
+    font-size: 1.1vw;
+  }
+  .goods_t h3 {
+    font-size: 1.15vw;
+  }
+  .goods_t h4 {
+    font-size: 0.92vw;
+  }
+  .footer_con {
+    width: 92%;
+  }
+}
+/* 노트북  medium */
+@media screen and (min-width: 1025px) and (max-width: 1369px) {
+}
