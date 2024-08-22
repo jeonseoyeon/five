@@ -88,7 +88,7 @@ h2 {
 .book_text h3 {
   font-weight: 900;
   font-size: 24px;
-  color: 3A3737;
+  color: #3a3737;
   margin-top: 123px;
 }
 .book_text h4 {
@@ -172,6 +172,53 @@ h2 {
 }
 .newbook_text p {
   color: #777;
+}
+/* 호버시 나오는 이미지  */
+.hide_img {
+  width: 294.53px;
+  height: 470px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s;
+  /* 이미지 숨겨놓음 */
+  opacity: 0;
+}
+/* 책 사이즈 달라서 개별 지정 */
+.hide_img.hide_img2 {
+  width: 327.94px;
+}
+.hide_img p {
+  width: fit-content;
+  height: fit-content;
+  margin: 30px;
+}
+.hide_img .hover_icons {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 30px;
+  left: 90px;
+}
+/* 책 사이즈 달라서 개별 지정 */
+.hide_img.hide_img2 .hover_icons {
+  width: 327.94px;
+  left: 108px;
+}
+.hover_icons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* 호버하면 숨겨진 줄거리 나오기 */
+.book_con:hover .hide_img {
+  opacity: 1;
 }
 /* 섹션4 */
 .sect4 {

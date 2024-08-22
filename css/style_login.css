@@ -73,6 +73,7 @@ input:focus {
 input::placeholder {
   font-size: 16px;
 }
+
 span {
   font-size: 14px;
   color: #606060;
@@ -82,6 +83,27 @@ span {
   width: 100%;
   margin-top: 13px;
   text-align: left;
+  display: flex;
+  align-items: center;
+}
+/* 체크박스 커스텀 */
+#check {
+  display: none;
+}
+.id_save label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+/* off */
+#check + label {
+  background-repeat: no-repeat;
+  background-image: url("./../img/sub_login/check_off.png");
+}
+/* on */
+#check:checked + label {
+  background-repeat: no-repeat; /* 반복 방지 */
+  background-image: url("./../img/sub_login/check_on.png");
 }
 .btn_login {
   width: 100%;
