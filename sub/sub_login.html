@@ -7,6 +7,9 @@
     <link rel="icon" href="./../img/favicon.ico" />
     <link rel="stylesheet" href="./../css/common.css" />
     <link rel="stylesheet" href="./../css/style_login.css" />
+    <!-- jq -->
+    <script src="./../js/jquery.min.js"></script>
+    <script src="./../js/jq_common.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -51,7 +54,7 @@
           <!-- 아이콘-->
           <div class="icons">
             <a href="./sub_login.html"><div class="login"></div></a>
-            <a href="#" onclick="showSearch()"><div class="search"></div></a>
+            <a href="#" id="showSearch"><div class="search"></div></a>
             <a href="./sub_shopping.html"><div class="shopping"></div></a>
           </div>
         </div>
@@ -80,7 +83,7 @@
             </div>
           </div>
           <!-- X아이콘 -->
-          <button type="button" class="x_btn" onclick="hideSearch()">
+          <button type="button" class="x_btn" id="hideSearch">
             <img src="./../img/icon/x_icon.png" alt="x" />
           </button>
         </div>
@@ -179,12 +182,10 @@
             카카오톡 문의<br />
             Instagram<br />
           </div>
-          <!-- 업버튼 자바스크립트로 수정? -->
-          <a href="/" class="up_button"></a>
+          <!-- 업버튼-->
+          <a href="#" class="up_button"></a>
         </div>
       </footer>
     </div>
-    <!-- js -->
-    <script src="./../js/javascript.js"></script>
   </body>
 </html>

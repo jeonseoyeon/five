@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsive/responsive.css" />
+    <!-- 글꼴애니메이션 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- jq -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jq_common.js" defer></script>
   </head>
   <body>
+    <!-- 글꼴애니메이션 -->
+    <script>
+      AOS.init();
+    </script>
     <div class="wrap">
       <header>
         <div class="header_wrap">
@@ -51,7 +62,7 @@
           <!-- 아이콘-->
           <div class="icons">
             <a href="./sub/sub_login.html"><div class="login"></div></a>
-            <a href="#" onclick="showSearch()"><div class="search"></div></a>
+            <a href="#" id="showSearch"><div class="search"></div></a>
             <a href="./sub/sub_shopping.html"><div class="shopping"></div></a>
           </div>
         </div>
@@ -80,7 +91,7 @@
             </div>
           </div>
           <!-- X아이콘 -->
-          <button type="button" class="x_btn" onclick="hideSearch()">
+          <button type="button" class="x_btn" id="hideSearch">
             <img src="./../img/icon/x_icon.png" alt="x" />
           </button>
         </div>
@@ -148,7 +159,7 @@
         </section>
         <!-- 섹션3 -->
         <section class="new_book">
-          <h2>신규 도서</h2>
+          <h2 class="new_book_txt">신규 도서</h2>
           <div class="sect3_innercon">
             <div class="book_con">
               <div class="book4">
@@ -161,10 +172,10 @@
                     개미들의 이사 이야기를 담은 이야기.
                   </p>
                   <div class="hover_icons">
-                    <button type="button">
+                    <button type="button" class="heart_popup_btn">
                       <img src="./../img/icon/heart_white.png" alt="좋아요" />
                     </button>
-                    <button type="button">
+                    <button type="button" class="shopping_popup_btn">
                       <img
                         src="./../img/icon/shopping white.png"
                         alt="장바구니"
@@ -189,10 +200,10 @@
                     변화를 담은 그림책
                   </p>
                   <div class="hover_icons">
-                    <button type="button">
+                    <button type="button" class="heart_popup_btn">
                       <img src="./../img/icon/heart_white.png" alt="좋아요" />
                     </button>
-                    <button type="button">
+                    <button type="button" class="shopping_popup_btn">
                       <img
                         src="./../img/icon/shopping white.png"
                         alt="장바구니"
@@ -212,15 +223,15 @@
                 <!-- 호버시 나오는 이미지 -->
                 <div class="hide_img">
                   <p>
-                    올해는 유난히 덥고 습했다. 나는 덥고 습해도 여름에는 더 많은
+                    올해는 유난히 덥고 습했다. 덥고 습해도 여름에는 더 많은
                     일들이 일어나는 것 같기 때문에 여름이 좋다. 내가 사랑한
                     여름에 대한 이야기를 펼쳐본다
                   </p>
                   <div class="hover_icons">
-                    <button type="button">
+                    <button type="button" class="heart_popup_btn">
                       <img src="./../img/icon/heart_white.png" alt="좋아요" />
                     </button>
-                    <button type="button">
+                    <button type="button" class="shopping_popup_btn">
                       <img
                         src="./../img/icon/shopping white.png"
                         alt="장바구니"
@@ -245,10 +256,10 @@
                     그렇게 매일 꽃을 담다보면 어느새 꽃병은 무지개가 된다.
                   </p>
                   <div class="hover_icons">
-                    <button type="button">
+                    <button type="button" class="heart_popup_btn">
                       <img src="./../img/icon/heart_white.png" alt="좋아요" />
                     </button>
-                    <button type="button">
+                    <button type="button" class="shopping_popup_btn">
                       <img
                         src="./../img/icon/shopping white.png"
                         alt="장바구니"
@@ -272,10 +283,10 @@
                     낯선 사회 생활 탐험기가 시작된다.
                   </p>
                   <div class="hover_icons">
-                    <button type="button">
+                    <button type="button" class="heart_popup_btn">
                       <img src="./../img/icon/heart_white.png" alt="좋아요" />
                     </button>
-                    <button type="button">
+                    <button type="button" class="shopping_popup_btn">
                       <img
                         src="./../img/icon/shopping white.png"
                         alt="장바구니"
@@ -291,6 +302,36 @@
             </div>
           </div>
         </section>
+        <!-- 팝업묶음박스 -->
+        <div class="popup_wrap">
+          <!-- 좋아요 팝업창 -->
+          <div class="heart_popup">
+            <button type="button" class="x_blue_btn1">
+              <img src="./img/icon/x_icon_blue.png" alt="X아이콘" />
+            </button>
+            <h2>로그인이 필요합니다. 로그인 하시겠습니까?</h2>
+            <div class="heart_popup_btn_wrap">
+              <a href="#" class="cancle_btn">취소</a>
+              <a href="./sub/sub_login.html" class="ok_btn">확인</a>
+            </div>
+          </div>
+          <!-- 장바구니 팝업창 -->
+          <div class="shopping_popup">
+            <button type="button" class="x_blue_btn2">
+              <img src="./img/icon/x_icon_blue.png" alt="X아이콘" />
+            </button>
+            <div>
+              <img src="./img/icon/shopping_popup.png" alt="장바구니아이콘" />
+            </div>
+            <h2>선택한 상품이 장바구니에 담겼습니다.</h2>
+            <div class="shopping_popup_btn_wrap">
+              <a href="#" class="cancle_btn2">계속 쇼핑하기</a>
+              <a href="./sub/sub_shopping.html" class="ok_shopping_btn"
+                >장바구니 확인</a
+              >
+            </div>
+          </div>
+        </div>
         <!-- 섹션4 -->
         <section class="sect4">
           <div class="sect4_text">
@@ -301,45 +342,48 @@
         </section>
         <!-- 섹션5 -->
         <section class="gift_book">
-          <div class="sect5_innercon">
-            <div class="gift_text">
-              <div class="gift"></div>
-              <h2>선물하기 좋은 책을 추천해요</h2>
-              <p>
-                현재 생각나는 이에게 그림을 통해 마음을<br />
-                선물해보세요. 기분이 좋아지는 그림,<br />
-                혹은 위로가 되는 그림도 좋아요.
-              </p>
-            </div>
-            <div class="gift_con">
-              <div class="book9">
-                <img src="./img/main/book4.jpg" alt="책" />
+          <!-- 글꼴애니메이션 -->
+          <div data-aos="fade-up" data-aos-duration="800">
+            <div class="sect5_innercon">
+              <div class="gift_text">
+                <div class="gift"></div>
+                <h2>선물하기 좋은 책을 추천해요</h2>
+                <p>
+                  현재 생각나는 이에게 그림을 통해 마음을<br />
+                  선물해보세요. 기분이 좋아지는 그림,<br />
+                  혹은 위로가 되는 그림도 좋아요.
+                </p>
               </div>
-              <div class="gift_img_t">
-                <h3>2월</h3>
-                <h4>서하영</h4>
-                <p>쓸쓸함과 따뜻함이 담겨 있는</p>
-                <span>판화기법으로 섬세한 그림이 특징!</span>
-                <h5>15,300원</h5>
-                <div class="sect5_icon">
-                  <div class="shopping_icon"></div>
-                  <div class="heart"></div>
+              <div class="gift_con">
+                <div class="book9">
+                  <img src="./img/main/book4.jpg" alt="책" />
+                </div>
+                <div class="gift_img_t">
+                  <h3>2월</h3>
+                  <h4>서하영</h4>
+                  <p>쓸쓸함과 따뜻함이 담겨 있는</p>
+                  <span>판화기법으로 섬세한 그림이 특징!</span>
+                  <h5>15,300원</h5>
+                  <div class="sect5_icon">
+                    <div class="shopping_icon"></div>
+                    <div class="heart"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="gift_con">
-              <div class="book10">
-                <img src="./img/main/book10.jpg" alt="책" />
-              </div>
-              <div class="gift_img_t">
-                <h3>딸에서 엄마로</h3>
-                <h4>하민윤</h4>
-                <p>이제 곧 엄마가 될 친구에게</p>
-                <span>두려움과 기대감을 따스하게 담아낸 책!</span>
-                <h5>12,000원</h5>
-                <div class="sect5_icon">
-                  <div class="shopping_icon"></div>
-                  <div class="heart"></div>
+              <div class="gift_con">
+                <div class="book10">
+                  <img src="./img/main/book10.jpg" alt="책" />
+                </div>
+                <div class="gift_img_t">
+                  <h3>딸에서 엄마로</h3>
+                  <h4>하민윤</h4>
+                  <p>이제 곧 엄마가 될 친구에게</p>
+                  <span>두려움과 기대감을 따스하게 담아낸 책!</span>
+                  <h5>12,000원</h5>
+                  <div class="sect5_icon">
+                    <div class="shopping_icon"></div>
+                    <div class="heart"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -416,12 +460,10 @@
             카카오톡 문의<br />
             Instagram<br />
           </div>
-          <!-- 업버튼 자바스크립트로 수정? -->
-          <a href="/" class="up_button"></a>
+          <!-- 업버튼  -->
+          <a href="#" class="up_button"></a>
         </div>
       </footer>
     </div>
-    <!-- js -->
-    <script src="./js/javascript.js"></script>
   </body>
 </html>
