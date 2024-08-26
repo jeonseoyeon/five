@@ -21,6 +21,7 @@ $(function () {
     //html태그를 선택하여 움직임을 준다. 이때 scrollTop의 위치를 0px자리로 이동. 1초동안 1000 = 1
     $("html").animate({ scrollTop: 0 }, 1000);
   });
+
   //좋아요 팝업창
   $(".heart_popup_btn").on("click", function () {
     $(".heart_popup").css("opacity", "1");
@@ -29,6 +30,7 @@ $(function () {
     event.preventDefault();
     $(".heart_popup").css("opacity", "0");
   });
+
   //장바구니 팝업창
   $(".shopping_popup_btn, .shopping_icon").on("click", function () {
     $(".shopping_popup").css("opacity", "1");

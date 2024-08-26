@@ -142,6 +142,7 @@ input::placeholder {
 .info5 h5 {
   font-size: 13px;
   color: #8a8a8a;
+  line-height: 1;
 }
 /* 파일 업로드 버튼 */
 .btn-upload {

@@ -128,7 +128,9 @@ h2 {
 /* 섹션3 */
 .new_book {
   width: 100%;
-  height: auto;
+  height: 670px;
+  /* 팝업창때문에 높이지정해서 높이 안늘어나도록*/
+  overflow: hidden;
   margin-top: 200px;
 }
 .new_book img {
@@ -230,8 +232,8 @@ h2 {
 }
 /* 좋아요 팝업창 */
 .heart_popup {
-  width: 430px;
-  height: 170px;
+  width: fit-content;
+  height: fit-content;
   transition: 0.3s;
   background-color: #fff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
@@ -373,7 +375,9 @@ h2 {
 /* 섹션5 */
 .gift_book {
   width: 100%;
-  height: auto;
+  height: 798px;
+  /* 팝업창때문에 영역 밖은 잘리도록 */
+  overflow: hidden;
   background-color: #fbfaf5;
   box-sizing: border-box;
   padding: 224px 0;
@@ -393,6 +397,10 @@ h2 {
   width: fit-content;
   height: fit-content;
 }
+
+.gift_inner_text {
+  width: fit-content;
+}
 .gift_text h2 {
   font-weight: 900;
   font-size: 30px;
@@ -401,7 +409,7 @@ h2 {
   margin-top: 60px;
   font-size: 20px;
   color: #777;
-  line-height: 40px;
+  line-height: 35px;
 }
 .gift {
   background-image: url(./../img/sprites.png);
@@ -468,6 +476,19 @@ h2 {
   cursor: pointer;
 }
 
+.sect5_icon button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* 팝업창 */
+
+.heart_popup.heart_popup2 {
+  top: -283px;
+}
+.shopping_popup.shopping_popup2 {
+  top: -458px;
+}
 /* 섹션6 */
 .goods {
   width: 100%;
@@ -479,6 +500,7 @@ h2 {
   margin: 200px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .goods_img {
   width: fit-content;
