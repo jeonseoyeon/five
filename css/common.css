@@ -181,7 +181,6 @@ footer {
   box-sizing: border-box;
   align-items: center;
   line-height: 190%;
-  /* background-color: #777; */
 }
 .footer_con span {
   font-weight: 600;
@@ -193,15 +192,12 @@ footer {
 }
 .footer_t1 {
   width: 61%;
-  /* background-color: darkblue; */
 }
 .footer_t2 {
   width: 14%;
-  /* background-color: darkcyan; */
 }
 .footer_t3 {
   width: 14%;
-  /* background-color: darkgoldenrod; */
 }
 .up_button {
   display: block;

@@ -68,36 +68,35 @@
   /* 섹션6 */
   .sect6_innercon {
     width: 92%;
+    align-items: stretch;
+    background-color: sandybrown;
   }
   .goods_img {
-    /* height: 450px; */
-    height: 45vh;
-    margin-right: 2%;
+    width: 45vw;
+    background-color: antiquewhite;
   }
-  .goods_right_box h2 {
-    font-size: 2.9vh;
-    margin-bottom: 20px;
+  .goods_img img {
+    height: 100%;
   }
-  .goods_inner_box {
-    width: 100%;
+  .goods_right_box {
+    width: 45vw;
   }
   .goods_img2 {
-    width: 210px;
-    height: 210px;
+    width: 14vw;
+    height: fit-content;
+  }
+  .goods_t {
+    margin-top: 0;
   }
   .goods_t h5 {
-    margin-top: 26px;
-    font-size: 1.1vw;
-  }
-  .goods_t h3 {
-    font-size: 1.15vw;
-  }
-  .goods_t h4 {
-    font-size: 0.827vw;
+    margin-top: 12px;
   }
   /* 푸터 */
   .footer_con {
     width: 92%;
+  }
+  .footer_t1 {
+    width: 60%;
   }
 }
 /* 노트북  medium */
