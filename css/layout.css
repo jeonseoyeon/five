@@ -405,19 +405,23 @@ h2 {
   font-weight: 900;
   font-size: 30px;
 }
-.gift_text p {
+/* p */
+.gift_inner_text_bottom {
+  width: 361px;
   margin-top: 60px;
-  font-size: 20px;
+  font-size: 19px;
   color: #777;
   line-height: 35px;
 }
-.gift {
-  background-image: url(./../img/sprites.png);
+
+/* 선물아이콘
+ .gift {
+   background-image: url(./../img/sprites.png); 
   width: 33px;
   height: 32px;
   background-position: -309px -85px;
   margin-bottom: 25px;
-}
+} */
 .gift_con {
   width: fit-content;
   height: fit-content;
@@ -443,14 +447,14 @@ h2 {
 .gift_img_t h3 {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 .gift_img_t h4 {
   color: #777;
   margin-bottom: 20px;
 }
-.gift_img_t span {
-  color: #777;
+.gift_img_t p {
+  font-size: 17px;
 }
 .gift_img_t h5 {
   font-weight: 600;
@@ -492,44 +496,60 @@ h2 {
 /* 섹션6 */
 .goods {
   width: 100%;
-  height: auto;
+  height: 500px;
+  margin: 200px 0;
 }
 .sect6_innercon {
   width: 1600px;
-  height: auto;
-  margin: 200px auto;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 .goods_img {
   width: 759px;
-  height: 500px;
-  /* margin-right: 42px; */
+  height: 100%;
+  overflow: hidden;
+  background-color: #507bca;
+  background-image: url(../img/main/goods.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.goods_img img {
-  max-width: 100%;
-}
+
 .goods_right_box {
   width: 50%;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
 }
 .goods_right_box h2 {
   line-height: 160%;
-  margin-bottom: 4%;
+  height: 20%;
 }
+
 .goods_inner_box {
-  /* width: 795px; */
   width: 100%;
-  height: fit-content;
+  height: 80%;
   display: flex;
   justify-content: space-between;
-  /* column-gap: 24px; */
+  align-self: stretch;
+  /* background-color: salmon; */
+}
+.g_conbox {
+  width: fit-content;
+  /* background: #e4e40c; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .goods_img2 {
   width: 240px;
   height: 240px;
   overflow: hidden;
+  flex: 1.8 1 0;
+  /* background-color: skyblue; */
 }
 .goods_img2 img {
   max-width: 100%;
@@ -540,19 +560,22 @@ h2 {
   transform: scale(1.08, 1.08);
 }
 .goods_t {
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  height: max-content;
   text-align: left;
   line-height: 150%;
   margin-top: 5px;
+  /* background-color: rgb(231, 255, 242); */
+  flex: 1 1 0;
+  position: relative;
 }
 .goods_t h4 {
   font-size: 14px;
   color: #898989;
 }
-
 .goods_t h5 {
   color: #6590df;
   font-weight: 600;
-  margin-top: 44px;
+  position: absolute;
+  bottom: 0;
 }
