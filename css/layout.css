@@ -1,4 +1,11 @@
 @charset "utf-8";
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* 컨텐츠 영역 */
 /* 글자 공통 속성 지정 */
@@ -394,37 +401,49 @@ h2 {
   align-items: center;
 }
 .gift_text {
-  width: fit-content;
-  height: fit-content;
+  width: 47%;
+  height: 350px;
+  position: relative;
 }
-
-.gift_inner_text {
-  width: fit-content;
+.gift_inner_text_top {
+  position: absolute;
+  top: 0;
 }
-.gift_text h2 {
+.gift_text .pick {
+  font-family: "PyeongChangPeace-Bold";
+  color: #6590df;
+  font-size: 16px;
+  margin-left: 5px;
+  letter-spacing: 0.4px;
+}
+.gift_inner_text_top h2 {
   font-weight: 900;
   font-size: 30px;
 }
-/* p */
+.gift_inner_text_top h5 {
+  font-size: 15px;
+  color: #434343;
+  margin-top: 1.5%;
+}
 .gift_inner_text_bottom {
   width: 361px;
   margin-top: 60px;
-  font-size: 19px;
-  color: #777;
-  line-height: 35px;
+  font-size: 20px;
+  color: #434343;
+  position: absolute;
+  bottom: 0;
 }
-
-/* 선물아이콘
- .gift {
-   background-image: url(./../img/sprites.png); 
-  width: 33px;
-  height: 32px;
-  background-position: -309px -85px;
-  margin-bottom: 25px;
-} */
+.gift_inner_text_bottom span {
+  font-weight: 600;
+}
+.gift_con_wrap {
+  width: 62%;
+  height: 350px;
+  display: flex;
+}
 .gift_con {
   width: fit-content;
-  height: fit-content;
+  height: 350px;
   display: flex;
   align-items: center;
 }
@@ -432,58 +451,59 @@ h2 {
 .book10 {
   width: fit-content;
   height: 350px;
+  cursor: pointer;
 }
-.book9 img,
-.book10 img {
+.book9 > img,
+.book10 > img {
   max-height: 100%;
   border-radius: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 .gift_img_t {
+  width: 216px;
+  height: 100%;
+  margin-left: 22px;
+  position: relative;
+}
+.bottom_t {
   width: fit-content;
-  height: fit-content;
-  margin-left: 24px;
+  position: absolute;
+  bottom: 0;
 }
-.gift_img_t h3 {
-  font-size: 24px;
+.bottom_t h3 {
+  font-size: 21px;
   font-weight: 600;
-  margin-bottom: 2px;
 }
-.gift_img_t h4 {
-  color: #777;
-  margin-bottom: 20px;
+.bottom_t h4 {
+  color: #8a8a8a;
+  margin-bottom: 28px;
+  font-size: 16px;
 }
-.gift_img_t p {
-  font-size: 17px;
-}
-.gift_img_t h5 {
+.bottom_t h5 {
   font-weight: 600;
   color: #6590df;
-  margin-top: 98px;
+  margin-bottom: 2px;
 }
-.sect5_icon {
-  margin-top: 14px;
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
+.bottom_t p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #8a8a8a;
 }
-.sect5_icon .shopping_icon {
-  width: 25px;
-  height: 24px;
-  background: url(./../img/sprites.png) -309px -181px;
-  cursor: pointer;
+/* 호버이미지 */
+.hide_img.hide_img3 {
+  width: 219.33px;
+  height: 350px;
+  border-radius: 20px;
 }
-.sect5_icon .heart {
-  width: 22px;
-  height: 20px;
-  background: url(./../img/sprites.png) -228px -245px;
-  cursor: pointer;
+.hide_img.hide_img3 .hover_icons {
+  left: 55px;
 }
-
-.sect5_icon button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+/* 호버하면 숨겨진 줄거리 나오기 */
+.book9:hover .hide_img {
+  opacity: 1;
+}
+.book10:hover .hide_img {
+  opacity: 1;
 }
 /* 팝업창 */
 
@@ -545,8 +565,8 @@ h2 {
   flex-direction: column;
 }
 .goods_img2 {
-  width: 240px;
-  height: 240px;
+  width: 248px;
+  height: 248px;
   overflow: hidden;
   flex: 1.8 1 0;
   /* background-color: skyblue; */

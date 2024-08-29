@@ -38,36 +38,11 @@
   .sect5_innercon {
     width: 92%;
   }
-  .gift {
-    margin-bottom: 10px;
+  .gift_text {
+    width: 37%;
   }
-  .gift_text h2 {
-    font-size: 2.9vh;
-  }
-  .gift_inner_text_bottom {
-    width: 346px;
-    font-size: 1.9vh;
-    margin-top: 40px;
-    line-height: 1.7;
-  }
-  .book9,
-  .book10 {
-    width: fit-content;
-    height: 320px;
-  }
-  .gift_img_t {
-    margin-left: 20px;
-  }
-  .gift_img_t h3 {
-    font-size: 2.3vh;
-  }
-  .gift_img_t h4,
-  .gift_img_t span {
-    font-size: 1.7vh;
-    margin-bottom: 20px;
-  }
-  .gift_img_t p {
-    font-size: 1.7vh;
+  .gift_con_wrap {
+    width: 63%;
   }
   /* 섹션6 */
   .sect6_innercon {
@@ -154,43 +129,17 @@
   .sect5_innercon {
     width: 92%;
   }
-  .gift {
-    margin-bottom: 16px;
+  .gift_text {
+    width: 35%;
   }
-  .gift_text h2 {
-    font-size: 2.64vh;
+  .gift_inner_text_bottom {
+    font-size: 1.32vw;
   }
-  .gift_text p {
-    font-size: 1.8vh;
-    margin-top: 40px;
-    line-height: 1.7;
-  }
-  .book9,
-  .book10 {
-    width: fit-content;
-    height: 300px;
+  .gift_con_wrap {
+    width: 65%;
   }
   .gift_img_t {
-    margin-left: 16px;
-  }
-  .gift_img_t h3 {
-    font-size: 2vh;
-    margin-bottom: 12px;
-  }
-  .gift_img_t h4,
-  .gift_img_t span {
-    font-size: 1.7vh;
-    margin-bottom: 12px;
-  }
-  .gift_img_t p {
-    font-size: 1.7vh;
-  }
-  .gift_img_t h5 {
-    font-size: 1.8vh;
-    margin-top: 74px;
-  }
-  .sect5_icon {
-    margin-top: 8px;
+    width: 169px;
   }
   /* 섹션6 */
   .sect6_innercon {
@@ -225,7 +174,7 @@
   }
 }
 /* 노트북  medium2 */
-@media screen and (min-width: 1265px) and (max-width: 1357px) {
+@media screen and (min-width: 1248px) and (max-width: 1357px) {
   .header_wrap {
     width: 92%;
   }
@@ -278,44 +227,20 @@
   .sect5_innercon {
     width: 92%;
   }
-  .gift {
-    margin-bottom: 9px;
+  .gift_text {
+    width: 33%;
   }
-  .gift_text h2 {
-    font-size: 2.5vh;
+  .gift_inner_text_bottom {
+    font-size: 1.32vw;
   }
-  .gift_text p {
-    font-size: 1.6vh;
-    margin-top: 40px;
-    line-height: 1.7;
-  }
-  .book9,
-  .book10 {
-    width: fit-content;
-    height: 273px;
+  .gift_con_wrap {
+    width: 67%;
   }
   .gift_img_t {
-    margin-left: 10px;
+    width: 169px;
+    margin-left: 9px;
   }
-  .gift_img_t h3 {
-    font-size: 2vh;
-    margin-bottom: 12px;
-  }
-  .gift_img_t h4,
-  .gift_img_t span {
-    font-size: 1.6vh;
-    margin-bottom: 12px;
-  }
-  .gift_img_t p {
-    font-size: 1.6vh;
-  }
-  .gift_img_t h5 {
-    font-size: 1.8vh;
-    margin-top: 54px;
-  }
-  .sect5_icon {
-    margin-top: 8px;
-  }
+
   /* 섹션6 */
   .sect6_innercon {
     width: 92%;
@@ -357,7 +282,7 @@
   }
 }
 /* 노트북  medium3 */
-@media screen and (min-width: 1025px) and (max-width: 1264px) {
+@media screen and (min-width: 1025px) and (max-width: 1247px) {
   .header_wrap {
     width: 94%;
   }
@@ -430,6 +355,9 @@
   .sect3_innercon {
     column-gap: 4%;
   }
+  .new_book_txt {
+    font-size: 2.8vh;
+  }
   /* 섹션4 */
   .sect4 {
     background-position: center;
@@ -437,50 +365,25 @@
   /* 섹션5 */
   .sect5_innercon {
     width: 92%;
+    background-color: brown;
   }
-  /* h2감싸주는 div */
-  .gift_inner_text {
-    width: 213px;
+
+  .gift_text {
+    width: 36%;
+    background-color: lightblue;
   }
-  .gift {
-    margin-bottom: 9px;
+  .gift_inner_text_bottom {
+    font-size: 1.32vw;
   }
-  .gift_text h2 {
-    font-size: 2.5vh;
-    line-height: 1.5;
-  }
-  .gift_text p {
-    font-size: 1.6vh;
-    margin-top: 40px;
-    line-height: 1.7;
-  }
-  .book9,
-  .book10 {
-    width: fit-content;
-    height: 273px;
+  .gift_con_wrap {
+    width: 64%;
+    background-color: pink;
   }
   .gift_img_t {
-    margin-left: 10px;
+    width: 169px;
+    margin-left: 9px;
   }
-  .gift_img_t h3 {
-    font-size: 2vh;
-    margin-bottom: 12px;
-  }
-  .gift_img_t h4,
-  .gift_img_t span {
-    font-size: 1.6vh;
-    margin-bottom: 12px;
-  }
-  .gift_img_t p {
-    font-size: 1.6vh;
-  }
-  .gift_img_t h5 {
-    font-size: 1.8vh;
-    margin-top: 54px;
-  }
-  .sect5_icon {
-    margin-top: 8px;
-  }
+
   /* 섹션6 */
   .sect6_innercon {
     width: 92%;
