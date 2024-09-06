@@ -148,7 +148,7 @@ nav ul:hover .submenu {
   width: 24px;
   height: 24px;
 }
-.icons > a > div {
+.icons > a > div:not(.moblie_menu_btn) {
   width: 100%;
   height: 100%;
   background-image: url(./../img/sprites.png);
@@ -163,6 +163,14 @@ nav ul:hover .submenu {
 .shopping {
   background-position: -54px -245px;
 }
+/* 반응형에서 나오는 버튼 */
+.moblie_menu_btn {
+  width: 100%;
+  height: 100%;
+  background-image: url(./../img/icon/moblie_menu_btn.png);
+  background-repeat: no-repeat;
+  display: none !important;
+}
 /* 푸터 */
 footer {
   width: 100%;
@@ -170,7 +178,6 @@ footer {
   background-color: #111;
   color: rgba(255, 255, 255, 0.8);
   font-size: 13px;
-  position: relative;
 }
 .footer_con {
   width: 1600px;
@@ -181,6 +188,7 @@ footer {
   box-sizing: border-box;
   align-items: center;
   line-height: 190%;
+  position: relative;
 }
 .footer_con span {
   font-weight: 600;
@@ -205,6 +213,8 @@ footer {
   height: 55px;
   background: url(./../img/sprites.png) -309px -10px;
   cursor: pointer;
+  position: absolute;
+  right: 0;
 }
 /* 검색창 */
 #search_form {

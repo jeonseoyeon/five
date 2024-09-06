@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  .header_wrap {
+    width: 92%;
+  }
+  .footer_con {
+    width: 92%;
+  }
+  .footer_t1 {
+    width: 57%;
+  }
+}
+/* 노트북  medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .header_wrap {
+    width: 92%;
+  }
+  .footer_con {
+    width: 92%;
+  }
+  .footer_t1 {
+    width: 49%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    width: 16%;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header_wrap {
+    width: 94%;
+  }
+  nav > ul {
+    font-size: 16.8px;
+  }
+  nav {
+    width: 56%;
+  }
+  .icons {
+    margin-left: 4%;
+  }
+  .footer_con {
+    width: 94%;
+  }
+  .footer_t1 {
+    width: 53%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    width: 22%;
+  }
+  .up_button {
+    display: none;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header_wrap {
+    width: 92%;
+  }
+  nav > ul {
+    font-size: 16.8px;
+  }
+  nav {
+    display: none;
+  }
+  .icons {
+    margin-left: 4%;
+    column-gap: 0;
+  }
+  /* 아이콘 숨기고 햄버거 버튼 나타내기 */
+  .login,
+  .shopping {
+    display: none;
+  }
+  .moblie_menu_btn {
+    display: block !important;
+  }
+  .login_con {
+    width: 78%;
+  }
+  footer {
+    height: fit-content;
+    text-align: center;
+  }
+  .footer_con {
+    width: 92%;
+    display: block;
+    padding: 20px 0;
+  }
+  .footer_logo {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .footer_logo img {
+    width: 90px;
+  }
+  .footer_t1 {
+    font-size: 12px;
+    width: 100%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    display: none;
+  }
+  .up_button {
+    display: none;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 480px) {
+  .header_wrap {
+    width: 92%;
+  }
+  nav {
+    display: none;
+  }
+  .icons {
+    margin-left: 4%;
+    column-gap: 0;
+  }
+  /* 아이콘 숨기고 햄버거 버튼 나타내기 */
+  .login,
+  .shopping {
+    display: none;
+  }
+  .moblie_menu_btn {
+    display: block !important;
+  }
+  .login_con {
+    width: 78%;
+  }
+  footer {
+    height: fit-content;
+    text-align: center;
+  }
+  .footer_con {
+    width: 92%;
+    display: block;
+    padding: 20px 0;
+  }
+  .footer_logo {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .footer_logo img {
+    width: 90px;
+  }
+  .footer_t1 {
+    font-size: 12px;
+    width: 100%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    display: none;
+  }
+  .up_button {
+    display: none;
+  }
+}

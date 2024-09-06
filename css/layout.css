@@ -174,7 +174,7 @@ h2 {
   width: 100%;
   height: fit-content;
   text-align: center;
-  margin-top: 26px;
+  margin-top: 18px;
 }
 .newbook_text h4 {
   font-size: 20px;
@@ -349,6 +349,7 @@ h2 {
 /* 섹션4 */
 .sect4 {
   background-image: url(./../img/main/sect4_img.png);
+  background-repeat: no-repeat;
   margin: 200px 0;
   width: 100%;
   height: 230px;
@@ -382,12 +383,11 @@ h2 {
 /* 섹션5 */
 .gift_book {
   width: 100%;
-  height: 798px;
-  /* 팝업창때문에 영역 밖은 잘리도록 */
+  height: 662px;
   overflow: hidden;
   background-color: #fbfaf5;
   box-sizing: border-box;
-  padding: 224px 0;
+  padding: 156px 0;
 }
 .gift_book img {
   cursor: pointer;
@@ -412,7 +412,7 @@ h2 {
 .gift_text .pick {
   font-family: "PyeongChangPeace-Bold";
   color: #6590df;
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 5px;
   letter-spacing: 0.4px;
 }
@@ -555,11 +555,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-self: stretch;
-  /* background-color: salmon; */
 }
 .g_conbox {
   width: fit-content;
-  /* background: #e4e40c; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -569,7 +567,6 @@ h2 {
   height: 248px;
   overflow: hidden;
   flex: 1.8 1 0;
-  /* background-color: skyblue; */
 }
 .goods_img2 img {
   max-width: 100%;
@@ -585,7 +582,6 @@ h2 {
   text-align: left;
   line-height: 150%;
   margin-top: 5px;
-  /* background-color: rgb(231, 255, 242); */
   flex: 1 1 0;
   position: relative;
 }

@@ -7,6 +7,10 @@
     <link rel="icon" href="./../img/favicon.ico" />
     <link rel="stylesheet" href="./../css/common.css" />
     <link rel="stylesheet" href="./../css/style_application.css" />
+    <link
+      rel="stylesheet"
+      href="./../css/responsive/responsive_application.css"
+    />
     <!-- jq -->
     <script src="./../js/jquery.min.js"></script>
     <script src="./../js/jq_common.js" defer></script>
@@ -58,6 +62,9 @@
             <a href="./sub_login.html"><div class="login"></div></a>
             <a href="#" id="showSearch"><div class="search"></div></a>
             <a href="./sub_shopping.html"><div class="shopping"></div></a>
+            <a href="#" class="moblie_menu_btn"
+              ><div class="moblie_menu"></div
+            ></a>
           </div>
         </div>
       </header>
@@ -252,15 +259,17 @@
                   거부하시는 경우 서비스 이용이 불가합니다.
                 </p>
               </div>
-              <div class="box2">
-                <label for="check">
-                  <input type="checkbox" />개인정보 수집 및 이용에 동의합니다.
-                </label>
+              <div class="id_save">
+                <input type="checkbox" name="check" id="check" /><label
+                  for="check"
+                ></label
+                ><span>개인정보 수집 및 이용에 동의합니다.</span>
               </div>
-              <div class="box3">
-                <label for="check">
-                  <input type="checkbox" />만 14세 이상입니다.
-                </label>
+              <div class="id_save2">
+                <input type="checkbox" name="check2" id="check2" /><label
+                  for="check2"
+                ></label
+                ><span>만 14세 이상입니다.</span>
               </div>
               <button type="submit">그림책 판매 등록 신청하기</button>
             </div>

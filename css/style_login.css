@@ -2,15 +2,14 @@
 
 main {
   width: 100%;
-  height: 873px;
-  position: relative;
-  top: 100px; /*해더 겹쳐져서 해더 크기만큼 아래로 내림*/
+  height: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
 .login_con {
   width: 550px;
-  height: 609px;
-  margin: 155px auto;
-  /* background-color: lightpink; */
+  height: fit-content;
+  margin: 0px auto;
   text-align: center;
 }
 .login_con h2 {
@@ -20,7 +19,6 @@ main {
 }
 form {
   width: 100%;
-  /* background-color: beige; */
 }
 .top_text {
   width: 100%;
@@ -32,7 +30,6 @@ form {
 .top_text a {
   display: block;
   width: 50%;
-  /* padding-top: 5px; */
 }
 .top_text a:first-child {
   font-weight: 600;
@@ -74,7 +71,7 @@ input::placeholder {
   font-size: 16px;
 }
 
-span {
+.id_save span {
   font-size: 14px;
   color: #606060;
   margin-left: 4px;

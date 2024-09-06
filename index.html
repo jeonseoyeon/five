@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsive/responsive.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
     <!-- 글꼴애니메이션 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- jq -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jq_common.js" defer></script>
   </head>
   <body>
     <!-- 글꼴애니메이션 -->
@@ -66,6 +65,7 @@
             <a href="./sub/sub_login.html"><div class="login"></div></a>
             <a href="#" id="showSearch"><div class="search"></div></a>
             <a href="./sub/sub_shopping.html"><div class="shopping"></div></a>
+            <a href="#" class="moblie_menu_btn"><div></div></a>
           </div>
         </div>
       </header>
@@ -101,12 +101,22 @@
       <!-- 컨텐츠영역 -->
       <main>
         <section class="main_visual">
-          <div class="main_visual_text">
-            <img src="./img/main/mainv_text.png" alt="메인비주얼글자" />
-            <p>
-              ‘다섯시’는 어른들을 위한 그림책을 수집합니다.<br />
-              그림책과 함께 따스한 오후 시간을 보내보세요.
-            </p>
+          <!-- 슬라이드 -->
+          <div class="slide">
+            <div class="main_visual_text">
+              <img src="./img/main/mainv_text.png" alt="메인비주얼글자" />
+              <p>
+                ‘다섯시’는 어른을 위한 그림책을 수집합니다.<br />
+                그림책과 함께 따스한 오후 시간을 보내보세요.
+              </p>
+            </div>
+            <div class="main_visual_text">
+              <img src="./img/main/mainv_text.png" alt="메인비주얼글자" />
+              <p>
+                ‘다섯시’는 어른을 위한 그림책을 수집합니다.<br />
+                그림책과 함께 따스한 오후 시간을 보내보세요.
+              </p>
+            </div>
           </div>
         </section>
         <!-- 섹션2 -->
@@ -122,14 +132,19 @@
               </div>
               <div class="book_text">
                 <h2>이번 달 베스트 도서</h2>
-                <h3>초록색 파도</h3>
-                <h4>이수진<br />13,000원</h4>
-                <p>
-                  2023 볼로냐 국제 도서전에서 올해의 일러스트레이터<br />
-                  상을 수상을 했던 이수진 작가가 신작으로 돌아왔다.<br />
-                  초록색 파도가 치는 바다에서 일어난 사건을 바탕으로 가족관계<br />
-                  에 관한 이야기를 담고 있다.
-                </p>
+                <div class="">
+                  <h3>초록색 파도</h3>
+                  <h4>이수진<br />13,000원</h4>
+                  <p>
+                    2023 볼로냐 국제 도서전에서 올해의 일러스트레이터<br />
+                    상을 수상을 했던 이수진 작가가 신작으로 돌아왔다.<br />
+                    <span>
+                      초록색 파도가 치는 바다에서 일어난 사건을 바탕으로
+                      가족관계<br />
+                      에 관한 이야기를 담고 있다.</span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
             <!-- 버튼 -->
@@ -188,7 +203,7 @@
               </div>
               <div class="newbook_text">
                 <h4>ANT HOUSE</h4>
-                <p>‘개미들의 이사’</p>
+                <p>개미들의 이사</p>
               </div>
             </div>
             <div class="book_con">
@@ -298,7 +313,7 @@
                 </div>
               </div>
               <div class="newbook_text">
-                <h4>오늘도, 소심한 야옹이</h4>
+                <h4>오늘도 소심한 야옹이</h4>
                 <p>고양이의 낯선 사회 생활 탐험기</p>
               </div>
             </div>
@@ -540,4 +555,10 @@
       </footer>
     </div>
   </body>
+  <!-- slick -->
+  <!-- jq -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jq_common.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jq_slide.js"></script>
 </html>

@@ -2,9 +2,9 @@
 
 main {
   width: 100%;
-  height: 1614px;
-  position: relative;
-  top: 100px; /*해더 겹쳐져서 해더 크기만큼 아래로 내림*/
+  height: auto;
+  margin-top: 180px;
+  margin-bottom: 200px;
 }
 /* 섹션1 */
 .shopping_sect {
@@ -344,6 +344,10 @@ input[type="number"]::-webkit-outer-spin-button {
 .sale_wrap {
   display: flex;
   justify-content: space-between;
+}
+.sale_con {
+  width: fit-content;
+  height: fit-content;
 }
 .book_img {
   width: 220px;

@@ -2,9 +2,8 @@
 
 main {
   width: 100%;
-  height: 4592px;
-  position: relative;
-  top: 100px; /*해더 겹쳐져서 해더 크기만큼 아래로 내림*/
+  height: auto;
+  margin-top: 190px;
 }
 /* 섹션1 */
 .best_sect {
@@ -245,6 +244,7 @@ h2 {
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
+  border-radius: 15px;
 }
 .banner h3 {
   font-size: 22px;

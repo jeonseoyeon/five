@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* 노트북 */
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .header_wrap {
+    width: 92%;
+  }
+  section {
+    width: 92%;
+  }
+  .hot_con {
+    width: 410px;
+  }
+  .hot_img {
+    height: 279px;
+    width: 100%;
+  }
+
+  .hot_inner_text {
+    width: 100%;
+  }
+  .footer_con {
+    width: 92%;
+  }
+
+  .footer_t1 {
+    width: 59%;
+  }
+}
+/* 노트북  medium */
+@media screen and (min-width: 1021px) and (max-width: 1399px) {
+  .header_wrap {
+    width: 92%;
+  }
+  .banner {
+    font-size: 28px;
+  }
+  section {
+    width: 92%;
+  }
+  .hot_con {
+    width: 31.7%;
+  }
+  .hot_img {
+    width: 100%;
+    height: fit-content;
+  }
+  .hot_inner_text {
+    width: 100%;
+    line-height: 1.5;
+  }
+  .hot_inner_text h3 {
+    font-size: 17px;
+  }
+  .hot_inner_text h4 {
+    font-size: 14.4px;
+  }
+  .hot_img > img {
+    transform-origin: left center;
+    scale: 1.07;
+  }
+  .inner_bottom_text p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .footer_con {
+    width: 92%;
+  }
+  .footer_t1 {
+    width: 49%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    width: 16%;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1020px) {
+  .header_wrap {
+    width: 94%;
+  }
+  nav > ul {
+    font-size: 16.8px;
+  }
+  nav {
+    width: 56%;
+  }
+  .icons {
+    margin-left: 4%;
+  }
+  .banner {
+    font-size: 25px;
+    height: 180px;
+    background-position: left top;
+  }
+  section {
+    width: 94%;
+  }
+  /* 섹션1 */
+  .hot_con {
+    width: 48%;
+  }
+  .hot_img {
+    background-color: lightblue;
+    width: 100%;
+    height: fit-content;
+  }
+  .hot_img > img {
+    transform-origin: left center;
+    scale: 1.07;
+  }
+  .hot_inner_text {
+    width: 100%;
+  }
+  .inner_bottom_text p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .hot_funding_con .hot_con:last-child {
+    display: none;
+  }
+  .footer_con {
+    width: 94%;
+  }
+  .footer_t1 {
+    width: 53%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    width: 22%;
+  }
+  .up_button {
+    display: none;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 해더 nav이때부터 변경 */
+  .header_wrap {
+    width: 92%;
+  }
+  nav > ul {
+    font-size: 16.8px;
+  }
+  nav {
+    display: none;
+  }
+  .icons {
+    margin-left: 4%;
+    column-gap: 0;
+  }
+  /* 아이콘 숨기고 햄버거 버튼 나타내기 */
+  .login,
+  .shopping {
+    display: none;
+  }
+  .moblie_menu_btn {
+    display: block !important;
+  }
+  section {
+    width: 92%;
+  }
+  .banner {
+    font-size: 23px;
+    background-position: left top;
+    padding: 9% 2% 0 2%;
+  }
+  /* 섹션1 */
+  .hot_funding_con {
+    display: block;
+    height: fit-content;
+  }
+  .hot_text {
+    text-align: center;
+  }
+  .hot_con {
+    margin: 0 auto;
+    width: 66%;
+    margin-bottom: 45px;
+  }
+  .hot_img {
+    width: 100%;
+    height: fit-content;
+  }
+  .hot_img > img {
+    transform-origin: left center;
+    scale: 1.07;
+  }
+  .hot_inner_text {
+    width: 100%;
+  }
+  .inner_bottom_text p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .hot_inner_text h4 {
+    font-size: 14px;
+  }
+
+  .hot_funding_con .hot_con:last-child {
+    display: block;
+  }
+  .funding_inner {
+    row-gap: 0;
+  }
+  /* 푸터 */
+  footer {
+    height: fit-content;
+    text-align: center;
+  }
+  .footer_con {
+    width: 92%;
+    display: block;
+    padding: 20px 0;
+  }
+  .footer_logo {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .footer_logo img {
+    width: 90px;
+  }
+  .footer_t1 {
+    font-size: 12px;
+    width: 100%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    display: none;
+  }
+  .up_button {
+    display: none;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 480px) {
+  .header_wrap {
+    width: 92%;
+  }
+  nav > ul {
+    font-size: 16.8px;
+  }
+  nav {
+    display: none;
+  }
+  .icons {
+    margin-left: 4%;
+    column-gap: 0;
+  }
+  /* 아이콘 숨기고 햄버거 버튼 나타내기 */
+  .login,
+  .shopping {
+    display: none;
+  }
+  .moblie_menu_btn {
+    display: block !important;
+  }
+  section {
+    width: 92%;
+  }
+  .banner {
+    font-size: 23px;
+    background-position: left top;
+    padding: 9% 2% 0 2%;
+  }
+  /* 섹션1 */
+  .hot_funding_con {
+    display: block;
+    height: fit-content;
+  }
+  .hot_text {
+    text-align: center;
+  }
+  .hot_con {
+    margin: 0 auto;
+    width: 66%;
+    margin-bottom: 40px;
+  }
+  .hot_img {
+    width: 100%;
+    height: fit-content;
+  }
+  .hot_img > img {
+    transform-origin: left center;
+    scale: 1.07;
+  }
+  .hot_inner_text {
+    width: 100%;
+  }
+  .inner_bottom_text p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .hot_inner_text h4 {
+    font-size: 14px;
+  }
+
+  .hot_funding_con .hot_con:last-child {
+    display: block;
+  }
+  .funding_inner {
+    row-gap: 0;
+  }
+  /* 푸터 */
+  footer {
+    height: fit-content;
+    text-align: center;
+  }
+  .footer_con {
+    width: 92%;
+    display: block;
+    padding: 20px 0;
+  }
+  .footer_logo {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .footer_logo img {
+    width: 90px;
+  }
+  .footer_t1 {
+    font-size: 12px;
+    width: 100%;
+  }
+  .footer_t2,
+  .footer_t3 {
+    display: none;
+  }
+  .up_button {
+    display: none;
+  }
+}
