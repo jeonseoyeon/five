@@ -26,14 +26,29 @@ h2 {
 .main_visual {
   width: 100%;
   height: 800px;
-  background-image: url(./../img/main/mainvisual.png);
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.main_visual_slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main_visual_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .main_visual_text {
   width: fit-content;
   height: fit-content;
-  position: relative;
+  position: absolute;
   left: 216px;
   top: 320px;
+  z-index: 1;
 }
 .main_visual_text h2 {
   color: #273652;
@@ -148,14 +163,16 @@ h2 {
   margin-bottom: 87px;
 }
 .sect3_innercon {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  column-gap: 170px;
+  column-gap: 130px;
   position: relative;
-  left: -120px; /*위치 맞춰놓을려고 잠시 해놓음 자바스크립트 하면서 없애기?*/
 }
 .book_con {
-  width: fit-content;
+  width: 294.53px;
+}
+.sect3_innercon .book_con:nth-child(4) {
+  width: 327.94px;
 }
 .book4,
 .book5,
@@ -171,10 +188,13 @@ h2 {
   max-height: 100%;
 }
 .newbook_text {
-  width: 100%;
+  width: 294.53px;
   height: fit-content;
   text-align: center;
   margin-top: 18px;
+}
+.newbook_text2 {
+  width: 327.94px;
 }
 .newbook_text h4 {
   font-size: 20px;
@@ -229,121 +249,6 @@ h2 {
 /* 호버하면 숨겨진 줄거리 나오기 */
 .book_con:hover .hide_img {
   opacity: 1;
-}
-/* 팝업창 wrap */
-.popup_wrap {
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-}
-/* 좋아요 팝업창 */
-.heart_popup {
-  width: fit-content;
-  height: fit-content;
-  transition: 0.3s;
-  background-color: #fff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  left: 50%;
-  margin-left: -215px;
-  top: -422px;
-  padding: 40px;
-  opacity: 0;
-  /* 장바구니랑 겹쳐져서 띄웠다 */
-  z-index: 3;
-}
-.x_blue_btn1 {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  right: 10px;
-  top: 14px;
-  cursor: pointer;
-}
-.heart_popup h2 {
-  font-size: 18px;
-  font-weight: 300;
-}
-.heart_popup_btn_wrap {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 7%;
-}
-.heart_popup_btn_wrap a {
-  display: block;
-  width: 160px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-}
-.cancle_btn {
-  border: 1px solid #c5cfdb;
-  color: #303030;
-}
-.ok_btn {
-  border: 1px solid #7594cd;
-  background-color: #7594cd;
-  color: #fff;
-}
-/* 장바구니 팝업창 */
-.shopping_popup {
-  font-family: "S-CoreDream-3Light";
-  width: 430px;
-  height: fit-content;
-  transition: 0.3s;
-  background-color: #fff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  left: 50%;
-  margin-left: -215px;
-  top: -593px;
-  padding: 30px;
-  opacity: 0;
-}
-.x_blue_btn2 {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  right: 10px;
-  top: 14px;
-  cursor: pointer;
-  /* 좋아요 팝업 x버튼이랑 겹쳐져서 띄웠다 */
-  z-index: 4;
-}
-.shopping_popup h2 {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.3;
-}
-.shopping_popup_btn_wrap {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 7%;
-}
-.shopping_popup_btn_wrap a {
-  display: block;
-  width: 170px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-}
-.cancle_btn2 {
-  border: 1px solid #c5cfdb;
-  color: #303030;
-}
-.ok_shopping_btn {
-  border: 1px solid #7594cd;
-  background-color: #7594cd;
-  color: #fff;
 }
 
 /* 섹션4 */
@@ -505,8 +410,7 @@ h2 {
 .book10:hover .hide_img {
   opacity: 1;
 }
-/* 팝업창 */
-
+/* 팝업창2 따로 위치 지정*/
 .heart_popup.heart_popup2 {
   top: -283px;
 }

@@ -97,7 +97,7 @@ th label {
 }
 
 /* 체크박스1 커스텀  */
-#checknum {
+#checknum1 {
   display: none;
 }
 .td_check label {
@@ -109,12 +109,12 @@ th label {
   left: 14px;
 }
 /* off */
-#checknum + label {
+#checknum1 + label {
   background-repeat: no-repeat;
   background-image: url("./../img/sub_shopping/check_off.png");
 }
 /* on */
-#checknum:checked + label {
+#checknum1:checked + label {
   background-repeat: no-repeat;
   background-image: url("./../img/sub_shopping/check_on.png");
 }
@@ -186,7 +186,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .coupon {
   position: absolute;
   top: 35%;
-  left: 24%;
+  left: 27%;
   background-color: transparent;
   border: 1px solid #000;
   font-family: "S-CoreDream-3Light";

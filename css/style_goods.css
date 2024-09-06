@@ -56,6 +56,8 @@ section {
 .goods {
   width: 1600px;
   margin: 0 auto;
+  overflow: hidden;
+  height: 1768px;
 }
 .sect2_text_top {
   width: 100%;
@@ -193,4 +195,8 @@ section {
 }
 .num_text a:hover {
   color: #000;
+}
+/* 팝업창 */
+.heart_popup.heart_popup5 {
+  top: -1699px;
 }

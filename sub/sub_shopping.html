@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="./../css/common.css" />
     <link rel="stylesheet" href="./../css/style_shopping.css" />
     <link rel="stylesheet" href="./../css/responsive/reponsive_shopping.css">
-     <!-- jq -->
-     <script src="./../js/jquery.min.js"></script>
-     <script src="./../js/jq_common.js" defer></script>
   </head>
   <body>
     <!-- 헤더 -->
@@ -123,11 +120,11 @@
                 <td class="td_check">
                   <input
                     type="checkbox"
-                    name="checknum"
-                    id="checknum"
-                    class="checknum"
+                    name="checknum1"
+                    id="checknum1"
+                    class="checknum1"
                     checked
-                  /><label for="checknum"></label>
+                  /><label for="checknum1"></label>
                 </td>
                 <td class="img_con">
                   <div class="img_box">
@@ -243,21 +240,21 @@
             <div class="top_box">
                 <div class="top_box_1">
                     <h2>총 결제 금액</h2>
-                    <h3>41,100 원</h3>
+                    <h3 class="price"><span>0</span>원</h3>
                 </div>
                 <div class="top_box_2">
-                    총 3개
+                    총 <span>0</span>개
                 </div>
             </div>
             <!-- 상품금액부터 -->
              <div class="middle_box">
                 <div class="middle_inner">
                     <h3>상품 금액</h3>
-                    <h4>40,700 원</h4>
+                    <h4 class="price"><span>0</span>원</h4>
                 </div>
                 <div class="middle_inner">
                     <h3>배송비</h3>
-                    <h4>3,000 원</h4>
+                    <h4>0 원</h4>
                 </div>
                 <div class="middle_inner">
                     <h3>총 할인 금액</h3>
@@ -391,4 +388,8 @@
       </div>
     </footer>
   </body>
+  <!-- jq -->
+  <script src="./../js/jquery.min.js"></script>
+  <script src="./../js/jq_common.js" defer></script>
+  <script src="./../js/jq_shopping.js"></script>
 </html>

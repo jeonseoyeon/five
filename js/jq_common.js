@@ -24,7 +24,9 @@ $(function () {
 
   //좋아요 팝업창
   $(".heart_popup_btn").on("click", function () {
-    $(".heart_popup").css("opacity", "1");
+    $(".heart_popup").css({
+      opacity: "1",
+    });
   });
   $(".x_blue_btn1, .cancle_btn").on("click", function (event) {
     event.preventDefault();

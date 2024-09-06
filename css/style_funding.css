@@ -48,7 +48,8 @@ section {
 }
 .hot_funding_con {
   width: 100%;
-  height: 619px;
+  height: 588px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   margin-top: 28px;
