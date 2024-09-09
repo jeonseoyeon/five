@@ -12,11 +12,11 @@ $(function () {
   $(".sect3_innercon").slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 1000,
     slidesToShow: 4.6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 1024,

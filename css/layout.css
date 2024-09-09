@@ -59,7 +59,7 @@ h2 {
   color: #939393;
   font-size: 28px;
   margin-top: 40px;
-  line-height: 160%;
+  line-height: 150%;
 }
 /* 섹션2 */
 .best_book {
@@ -333,7 +333,7 @@ h2 {
 .gift_inner_text_bottom {
   width: 361px;
   margin-top: 60px;
-  font-size: 20px;
+  font-size: 19px;
   color: #434343;
   position: absolute;
   bottom: 0;
@@ -387,7 +387,6 @@ h2 {
 .bottom_t h5 {
   font-weight: 600;
   color: #6590df;
-  margin-bottom: 2px;
 }
 .bottom_t p {
   font-size: 16px;
@@ -449,7 +448,7 @@ h2 {
   gap: 30px;
 }
 .goods_right_box h2 {
-  line-height: 160%;
+  line-height: 150%;
   height: 20%;
 }
 
