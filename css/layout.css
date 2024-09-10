@@ -42,6 +42,11 @@ h2 {
   position: absolute;
   top: 0;
 }
+.main_visual_img img {
+  max-width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
 .main_visual_text {
   width: fit-content;
   height: fit-content;
@@ -74,6 +79,10 @@ h2 {
   padding: 70px 0 0 0;
   box-sizing: border-box;
 }
+.sect2_innercon h2 {
+  position: absolute;
+  left: 760px;
+}
 .best_book img {
   cursor: pointer;
 }
@@ -89,10 +98,20 @@ h2 {
 .book3 img {
   max-height: 100%;
 }
-
 .book1 {
   position: absolute;
   left: -100px;
+}
+.book_text_box0 {
+  width: 884px;
+  height: 504px;
+  display: flex;
+  position: absolute;
+  left: 0px;
+}
+/* 슬라이드적용전 임시로 숨겨놓음 */
+.book_text_box0 .book_text {
+  display: none;
 }
 .book_text_box1 {
   width: 884px;
@@ -103,15 +122,13 @@ h2 {
 }
 .book_text {
   width: fit-content;
-  height: 504px;
   margin-left: 80px;
-  margin-top: 3px;
+  margin-top: 157px;
 }
 .book_text h3 {
   font-weight: 900;
   font-size: 24px;
   color: #3a3737;
-  margin-top: 123px;
 }
 .book_text h4 {
   margin-top: 123px;
@@ -122,12 +139,15 @@ h2 {
   color: #fff;
   font-weight: 100;
 }
+.slide2 {
+  height: 723px;
+}
 /* 섹션 2 버튼 */
 .sect2_icon {
-  width: fit-content;
-  height: fit-content;
+  width: 140px;
+  height: 20px;
   position: absolute;
-  left: 1394px;
+  left: 1507px;
 }
 .sect2_icon button {
   border: none;
@@ -135,18 +155,18 @@ h2 {
   cursor: pointer;
 }
 .btn1 {
-  margin-left: 84px;
+  position: absolute;
+  top: -3px;
+  right: 0;
 }
 .book_text_box2 {
   width: 884px;
   height: 504px;
   display: flex;
   position: absolute;
-  left: 1615px;
+  left: 1722px;
 }
-.book_text_box2 h3 {
-  margin-top: 151px;
-}
+
 /* 섹션3 */
 .new_book {
   width: 100%;
@@ -171,9 +191,6 @@ h2 {
 .book_con {
   width: 294.53px;
 }
-.sect3_innercon .book_con:nth-child(4) {
-  width: 327.94px;
-}
 .book4,
 .book5,
 .book6,
@@ -192,9 +209,6 @@ h2 {
   height: fit-content;
   text-align: center;
   margin-top: 18px;
-}
-.newbook_text2 {
-  width: 327.94px;
 }
 .newbook_text h4 {
   font-size: 20px;
@@ -217,10 +231,6 @@ h2 {
   /* 이미지 숨겨놓음 */
   opacity: 0;
 }
-/* 책 사이즈 달라서 개별 지정 */
-.hide_img.hide_img2 {
-  width: 327.94px;
-}
 .hide_img p {
   width: fit-content;
   height: fit-content;
@@ -235,11 +245,6 @@ h2 {
   position: absolute;
   bottom: 30px;
   left: 90px;
-}
-/* 책 사이즈 달라서 개별 지정 */
-.hide_img.hide_img2 .hover_icons {
-  width: 327.94px;
-  left: 108px;
 }
 .hover_icons button {
   border: none;
