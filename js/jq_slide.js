@@ -12,6 +12,7 @@ $(function () {
   // 베스트도서
   // 중앙 슬라이드의 텍스트를 초기화
   $(".slide2-1").eq(1).find(".book_text").css("display", "block");
+  $(".slide2-1").eq(0).find(".book_text_box").css("width", "316px");
 
   // 슬릭 슬라이더 초기화
   $(".slide2").slick({
@@ -20,6 +21,7 @@ $(function () {
     slidesToScroll: 1,
     initialSlide: 1,
     centerMode: true,
+    centerPadding: "0px",
     arrows: true,
     variableWidth: true,
     prevArrow: $("#prevBtn1"),
@@ -43,18 +45,21 @@ $(function () {
   // 중앙 슬라이드의 텍스트만 보이게 처리하는 함수
   function toggleBookText() {
     // 이전 슬라이드 book_text숨기기
-    $(".slide2-1.slick-center").prev().find(".book_text").hide();
 
-    // 다음 슬라이드 book_text에 넓이 설정
-    $(".slide2-1.slick-center").next().find(".book_text").css({
-      display: "block",
-    });
+    $(".slide2-1.slick-center").prev().find(".book_text").fadeOut(100);
+
+    $(".slide2-1.slick-center")
+      .next()
+      .find(".book_text_box")
+      .css("width", "884px");
   }
 
   //나타나는 함수
   function fade_on() {
     // slick-center 클래스를 가진 슬라이드의 .book_text만 보이게 함
+    $(".slide2-1.slick-center").find(".book_text_box").css({ width: "884px" });
     $(".slide2-1.slick-center .book_text").fadeIn(500);
+    $(".slide2-1.slick-center").next().find(".book_text").fadeOut(100);
   }
 
   // 신규도서
@@ -65,7 +70,7 @@ $(function () {
     slidesToShow: 4.58,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 800,
     responsive: [
       {
         breakpoint: 1336,
