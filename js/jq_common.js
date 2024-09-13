@@ -1,4 +1,3 @@
-AOS.init();
 $(function () {
   //검색창 열기
   $("#showSearch").click(function () {
