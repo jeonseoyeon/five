@@ -8,18 +8,12 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsive/responsive_main.css" />
-    <link rel="stylesheet" href="./css/slick-theme.css" />
     <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
     <!-- 글꼴애니메이션 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   </head>
   <body>
-    <!-- 글꼴애니메이션 -->
-    <script>
-      AOS.init();
-    </script>
     <div class="wrap">
       <header>
         <div class="header_wrap">
@@ -134,10 +128,10 @@
             <h2>이번 달 베스트 도서</h2>
             <!-- 버튼 -->
             <div class="sect2_icon">
-              <button type="button" class="btn0">
+              <button type="button" id="prevBtn1">
                 <img src="./img/icon/sect2_next_btn1.png" alt="버튼" />
               </button>
-              <button type="button" class="btn1">
+              <button type="button" id="nextBtn1">
                 <img src="./img/icon/sect2_next_btn2.png" alt="버튼" />
               </button>
             </div>
@@ -145,9 +139,9 @@
             <div class="slide2">
               <!--  책+텍스트 박스0 -->
               <div class="slide2-1">
-                <div class="book_text_box0">
-                  <div class="book1">
-                    <img src="./img/main/book1.jpg" alt="책" />
+                <div class="book_text_box">
+                  <div class="book0">
+                    <img src="./img/main/book1.png" alt="책" />
                   </div>
                   <div class="book_text">
                     <h3>정원의 시간</h3>
@@ -156,8 +150,8 @@
                       정원에서 시간을 잃어버렸다.<br />
                       그녀는 시간을 찾기 위해 정원으로 들어간다.<br />
                       <span>
-                        정원에서 다양한 식물과 마주하며,<br />각 식물이 가진
-                        특별한 기억과 감정을 통해 과거를 돌아보게 된다.</span
+                        정원에서 다양한 식물과 마주하며,<br />식물이 가진 특별한
+                        기억을 통해 과거를 돌아보게 된다.</span
                       >
                     </p>
                   </div>
@@ -165,8 +159,8 @@
               </div>
               <!--  책+텍스트 박스1 -->
               <div class="slide2-1">
-                <div class="book_text_box1">
-                  <div class="book2">
+                <div class="book_text_box">
+                  <div class="book0">
                     <img src="./img/main/book3.jpg" alt="책" />
                   </div>
                   <div class="book_text">
@@ -176,9 +170,8 @@
                       2023 볼로냐 국제 도서전에서 올해의 일러스트레이터<br />
                       상을 수상을 했던 이수진 작가가 신작으로 돌아왔다.<br />
                       <span>
-                        초록색 파도가 치는 바다에서 일어난 사건을 바탕으로
-                        가족관계<br />
-                        에 관한 이야기를 담고 있다.</span
+                        바다에서 일어난 사건을 바탕으로 가족관계에<br />
+                        관한 이야기를 담고 있다.</span
                       >
                     </p>
                   </div>
@@ -186,8 +179,8 @@
               </div>
               <!-- 책+텍스트 박스2 -->
               <div class="slide2-1">
-                <div class="book_text_box2">
-                  <div class="book3">
+                <div class="book_text_box">
+                  <div class="book0">
                     <img src="./img/main/book12.png" alt="책" />
                   </div>
                   <div class="book_text">
@@ -198,6 +191,40 @@
                       큰 공간이 아닌 작은 공간만을 찾아가는 이야기 <br />
                       저자는 이 책을 통해 개개인의 공간을 이야기하고 있다.<br />
                       공간과 방에 인생을 비유하며 사람들에게 위로를 건넨다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 책+텍스트 박스3 -->
+              <div class="slide2-1">
+                <div class="book_text_box">
+                  <div class="book0">
+                    <img src="./img/main/book13.png" alt="책" />
+                  </div>
+                  <div class="book_text">
+                    <h3>WIZARD</h3>
+                    <h4>OLIVA WILSON<br />16,900원</h4>
+                    <p>
+                      돌팔이 마법사의 이야기. <br />
+                      마법은 세상을 재밌게 만들어 주는 도구라며<br />
+                      하나 둘 세상을 망치기 시작하는데..
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 책+텍스트 박스4 -->
+              <div class="slide2-1">
+                <div class="book_text_box">
+                  <div class="book0">
+                    <img src="./img/main/book14.png" alt="책" />
+                  </div>
+                  <div class="book_text">
+                    <h3>함께의 가치</h3>
+                    <h4>박나현<br />18,000원</h4>
+                    <p>
+                      다양한 사람들이 차별없이 <br />
+                      소통하고 갈등을 통해 협력해 나가는<br />
+                      세상을 위한 가치로운 삶에 대한 이야기
                     </p>
                   </div>
                 </div>
@@ -585,11 +612,12 @@
         </div>
       </footer>
     </div>
+    <!-- slick -->
+    <!-- jq -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jq_common.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jq_slide.js"></script>
   </body>
-  <!-- slick -->
-  <!-- jq -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/jq_common.js"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/jq_slide.js"></script>
 </html>

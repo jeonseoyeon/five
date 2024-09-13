@@ -100,9 +100,9 @@
 
   border: 1px solid transparent;
 }
-/* .slick-arrow.slick-hidden {
+.slick-arrow.slick-hidden {
   display: none;
-} */
+}
 /* .slide2 button .slick-arrow.slick-hidden {
   display: block;
 } */
