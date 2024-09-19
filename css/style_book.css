@@ -202,7 +202,7 @@ h2 {
   width: fit-content;
   height: fit-content;
   position: relative;
-  transition: top 0.3s ease;
+  transition: 0.5s;
 }
 .five_book_img {
   width: 321px;

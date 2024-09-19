@@ -4,8 +4,17 @@
   .header_wrap {
     width: 92%;
   }
+  /* 메인비주얼 */
   .main_visual_text {
     left: 6%;
+  }
+  .main_v2,
+  .main_v3 {
+    object-position: top;
+  }
+  .main_visual_text2,
+  .main_visual_text3 {
+    right: 9%;
   }
   /* 섹션2*/
   .sect2_innercon h2 {
@@ -70,14 +79,18 @@
   .header_wrap {
     width: 92%;
   }
+  /* 메인비주얼 */
   .main_visual_text {
     left: 6%;
   }
-  .main_visual_text p {
-    font-size: 1.7vw;
+  .main_v2,
+  .main_v3 {
+    object-position: top;
+    object-position: -170px;
   }
-  .main_visual_text img {
-    width: 29vw;
+  .main_visual_text2,
+  .main_visual_text3 {
+    right: 9%;
   }
   /* 섹션2*/
   .sect2_innercon h2 {
@@ -152,14 +165,18 @@
   .header_wrap {
     width: 92%;
   }
+  /* 메인비주얼 */
   .main_visual_text {
-    left: 6%;
+    left: 5%;
   }
-  .main_visual_text p {
-    font-size: 19px;
+  .main_v2,
+  .main_v3 {
+    object-position: top;
+    object-position: -170px;
   }
-  .main_visual_text img {
-    width: 400px;
+  .main_visual_text2,
+  .main_visual_text3 {
+    right: 5%;
   }
   /* 섹션2*/
   .sect2_innercon h2 {
@@ -244,15 +261,18 @@
   .header_wrap {
     width: 94%;
   }
+  /* 메인비주얼 */
   .main_visual_text {
-    left: 6%;
+    left: 5%;
   }
-  .main_visual_text p {
-    font-size: 19px;
-    margin-top: 20px;
+  .main_v2,
+  .main_v3 {
+    object-position: top;
+    object-position: -270px;
   }
-  .main_visual_text img {
-    width: 400px;
+  .main_visual_text2,
+  .main_visual_text3 {
+    right: 5%;
   }
   /* 섹션2*/
   .sect2_innercon h2 {
@@ -374,15 +394,38 @@
   .icons {
     margin-left: 4%;
   }
+  /* 메인비주얼 */
   .main_visual_text {
-    left: 6%;
+    left: 5%;
   }
-  .main_visual_text img {
-    width: 400px;
+  .main_visual_text h2,
+  .main_visual_text2 h2,
+  .main_visual_text3 h2 {
+    font-size: 37px;
+    margin-bottom: 30px;
   }
-  .main_visual_text p {
-    font-size: 19px;
-    margin-top: 20px;
+  .visual_bottom_txt0,
+  .visual_bottom_txt,
+  .visual_bottom_txt3 {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  .after_arrow0,
+  .after_arrow1,
+  .after_arrow2 {
+    font-size: 15px;
+  }
+  .main_v2,
+  .main_v3 {
+    object-position: top;
+    object-position: -250px;
+  }
+  .main_visual_text2,
+  .main_visual_text3 {
+    right: 0%;
+  }
+  .visual_bottom_txt3 {
+    width: 416px;
   }
   /* 섹션2*/
   .sect2_innercon h2 {
@@ -557,15 +600,47 @@
   .moblie_menu_btn {
     display: block !important;
   }
+  /* 메인비주얼 */
+  .main_visual {
+    height: 70vh;
+  }
+  .main_v1 {
+    object-position: -730px -10px;
+  }
   .main_visual_text {
-    left: 6%;
+    left: 5%;
+    top: 550px;
   }
-  .main_visual_text img {
-    width: 400px;
+  .main_visual_text h2,
+  .main_visual_text2 h2,
+  .main_visual_text3 h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
   }
-  .main_visual_text p {
-    font-size: 19px;
-    margin-top: 20px;
+  .visual_bottom_txt0,
+  .visual_bottom_txt,
+  .visual_bottom_txt3 {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .after_arrow0,
+  .after_arrow1,
+  .after_arrow2 {
+    font-size: 15px;
+  }
+  .main_v2 {
+    object-position: -360px -40px;
+  }
+  .main_v3 {
+    object-position: -310px 20px;
+  }
+  .main_visual_text2,
+  .main_visual_text3 {
+    right: -4%;
+    top: 550px;
+  }
+  .visual_bottom_txt3 {
+    width: 416px;
   }
   /* 섹션2 */
   .sect2_innercon h2 {
@@ -842,21 +917,47 @@
   .moblie_menu_btn {
     display: block !important;
   }
+  /* 메인비주얼 */
   .main_visual {
-    height: 750px;
+    height: 70vh;
+  }
+  .main_v1 {
+    object-position: -810px -10px;
   }
   .main_visual_text {
-    left: 6%;
+    left: 5%;
+    top: 590px;
   }
-  .main_visual_text img {
+  .main_visual_text h2,
+  .main_visual_text2 h2,
+  .main_visual_text3 h2 {
+    font-size: 33px;
+    margin-bottom: 12px;
+  }
+  .visual_bottom_txt0,
+  .visual_bottom_txt,
+  .visual_bottom_txt3 {
+    padding-top: 12px;
+    font-size: 16px;
+  }
+  .after_arrow0,
+  .after_arrow1,
+  .after_arrow2 {
+    font-size: 15px;
+  }
+  .main_v2 {
+    object-position: -250px -40px;
+  }
+  .main_v3 {
+    object-position: -230px 0px;
+  }
+  .main_visual_text2,
+  .main_visual_text3 {
+    right: 0%;
+    top: 590px;
+  }
+  .visual_bottom_txt3 {
     width: 370px;
-  }
-  .main_visual_img img {
-    object-position: 48%;
-  }
-  .main_visual_text p {
-    font-size: 17px;
-    margin-top: 10px;
   }
   /* 섹션2 */
   .sect2_innercon h2 {

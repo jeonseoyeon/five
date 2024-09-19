@@ -4,9 +4,19 @@ $(function () {
     infinite: true,
     slidesToShow: 1, //한번에 보여줄 슬라이드 아이템 개수
     slidesToScroll: 1,
+    initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     arrows: false,
+    speed: 1200,
+  });
+
+  //메인비주얼 링크연결
+  $(".after_arrow0, .after_arrow1").click(function () {
+    window.location.href = "./sub/sub_book.html"; // 원하는 링크로 변경
+  });
+  $(".after_arrow2").click(function () {
+    window.location.href = "./sub/sub_login.html"; // 원하는 링크로 변경
   });
 
   // 베스트도서
