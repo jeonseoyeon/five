@@ -219,9 +219,9 @@ nav ul:hover .submenu {
   margin-top: 150px;
 }
 .moblie_left_menu_inner h5 {
-  margin-top: 5px;
+  margin-top: 7px;
   line-height: 1.5;
-  font-size: 14.5px;
+  font-size: 14px;
   color: #636363;
   letter-spacing: 0.3px;
 }
@@ -378,7 +378,7 @@ footer {
   margin-left: -215px;
   top: -422px;
   padding: 40px;
-  opacity: 0;
+  display: none;
   /* 장바구니랑 겹쳐져서 띄웠다 */
   z-index: 3;
 }
@@ -411,6 +411,7 @@ footer {
 .cancle_btn {
   border: 1px solid #c5cfdb;
   color: #303030;
+  transition: 0.3s;
 }
 .cancle_btn:hover {
   background-color: #e3eaf1;
@@ -420,6 +421,7 @@ footer {
   border: 1px solid #7594cd;
   background-color: #7594cd;
   color: #fff;
+  transition: 0.3s;
 }
 .ok_btn:hover {
   background-color: #507bca;
@@ -438,9 +440,9 @@ footer {
   position: relative;
   left: 50%;
   margin-left: -215px;
-  top: -593px;
+  top: -452px;
   padding: 30px;
-  opacity: 0;
+  display: none;
 }
 .x_blue_btn2 {
   background-color: transparent;
@@ -474,6 +476,7 @@ footer {
 .cancle_btn2 {
   border: 1px solid #c5cfdb;
   color: #303030;
+  transition: 0.3s;
 }
 .cancle_btn2:hover {
   background-color: #e3eaf1;
@@ -483,6 +486,7 @@ footer {
   border: 1px solid #7594cd;
   background-color: #7594cd;
   color: #fff;
+  transition: 0.3s;
 }
 .ok_shopping_btn:hover {
   background-color: #507bca;

@@ -65,7 +65,7 @@ main {
   top: -685px;
 }
 .shopping_popup.shopping_popup3 {
-  top: -861px;
+  top: -715px;
 }
 /* h2 공통속성 */
 h2 {
@@ -389,7 +389,7 @@ h2 {
   top: -1912px;
 }
 .shopping_popup.shopping_popup4 {
-  top: -2082px;
+  top: -1950px;
 }
 /* 섹션 5*/
 .banner2 {
@@ -401,5 +401,5 @@ h2 {
   letter-spacing: 0.4px;
   font-size: 22px;
   font-weight: 600;
-  background-color: #99b2e0;
+  background-color: #8da8dc;
 }

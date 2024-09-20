@@ -156,6 +156,11 @@ input::placeholder {
   justify-content: center;
   margin-top: 10px;
   font-size: 16px;
+  transition: 0.3s;
+}
+.btn-upload:hover {
+  background-color: #ececec;
+  border: 1px solid #ececec;
 }
 /* 기존 인풋 file은 숨기기 */
 #upload_img {
