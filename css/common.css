@@ -33,7 +33,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 900;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
 }
 .header_wrap {
@@ -162,6 +162,71 @@ nav ul:hover .submenu {
 }
 .shopping {
   background-position: -54px -245px;
+}
+/* 반응형 모바일 메뉴바 */
+.moblie_left_menu {
+  width: 420px;
+  height: 100%;
+  z-index: 50;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 901;
+  display: none;
+  box-shadow: -390px 0px 0px rgba(0, 0, 0, 0.75);
+}
+.moblie_left_menu a:hover {
+  color: #7594cd;
+}
+.moblie_left_menu_inner {
+  width: 88%;
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  margin-top: 25px;
+  line-height: 54px;
+}
+.moblie_left_menu_top {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.moblie_left_menu_top a {
+  display: block;
+  width: fit-content;
+}
+.moblie_left_menu_top button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.moblie_left_menu_top button img {
+  scale: 0.8;
+}
+.m_img {
+  width: 215px;
+  height: 344px;
+}
+.moblie_left_menu_inner p {
+  line-height: 1.9;
+  font-size: 15px;
+  color: #242424;
+  margin-top: 150px;
+}
+.moblie_left_menu_inner h5 {
+  margin-top: 5px;
+  line-height: 1.5;
+  font-size: 14.5px;
+  color: #636363;
+  letter-spacing: 0.3px;
+}
+.m_img img {
+  max-width: 100%;
 }
 /* 반응형에서 나오는 버튼 */
 .moblie_menu_btn {
@@ -347,10 +412,18 @@ footer {
   border: 1px solid #c5cfdb;
   color: #303030;
 }
+.cancle_btn:hover {
+  background-color: #e3eaf1;
+  border: 1px solid #e3eaf1;
+}
 .ok_btn {
   border: 1px solid #7594cd;
   background-color: #7594cd;
   color: #fff;
+}
+.ok_btn:hover {
+  background-color: #507bca;
+  border: 1px solid #507bca;
 }
 /* 장바구니 팝업창 */
 .shopping_popup {
@@ -402,8 +475,16 @@ footer {
   border: 1px solid #c5cfdb;
   color: #303030;
 }
+.cancle_btn2:hover {
+  background-color: #e3eaf1;
+  border: 1px solid #e3eaf1;
+}
 .ok_shopping_btn {
   border: 1px solid #7594cd;
   background-color: #7594cd;
   color: #fff;
+}
+.ok_shopping_btn:hover {
+  background-color: #507bca;
+  border: 1px solid #507bca;
 }

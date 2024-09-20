@@ -41,12 +41,8 @@
   .banner {
     background-position: right;
   }
-
   .books {
     width: 92%;
-  }
-  .banner2 {
-    background-position: bottom;
   }
   .footer_con {
     width: 92%;
@@ -115,13 +111,7 @@
   }
   .books {
     width: 92%;
-  }
-  .banner2 {
-    background-position: bottom;
-  }
-  .banner2_txt {
-    width: 92%;
-    padding: 45px 82px;
+    height: 2008px;
   }
   .footer_con {
     width: 92%;
@@ -230,15 +220,6 @@
   .banner_txt h4 {
     font-size: 1rem;
   }
-  /* 배너2 */
-  .banner2 {
-    background-position: bottom;
-  }
-  .banner2_txt {
-    width: 92%;
-    padding: 45px 0px;
-    font-size: 1.22rem;
-  }
   .footer_con {
     width: 94%;
   }
@@ -282,7 +263,8 @@
   /* 섹션1 */
   .best_sect {
     width: 92%;
-    height: 1461px;
+    height: fit-content;
+    overflow: hidden;
   }
   h2 {
     text-align: center;
@@ -347,6 +329,7 @@
   }
   .books {
     width: 92%;
+    height: 5300px;
   }
   .banner_txt {
     margin-left: 0px;
@@ -357,14 +340,14 @@
   .banner_txt h4 {
     display: none;
   }
-  /* 배너2 */
-  .banner2 {
-    background-position: bottom;
+  /* 높이때문에 팝업숨김 */
+  .heart_popup.heart_popup3,
+  .shopping_popup.shopping_popup3 {
+    display: none;
   }
-  .banner2_txt {
-    width: 92%;
-    padding: 45px 0px;
-    font-size: 1.1rem;
+  .heart_popup.heart_popup4,
+  .shopping_popup.shopping_popup4 {
+    display: none;
   }
   footer {
     height: fit-content;
@@ -395,7 +378,7 @@
   }
 }
 /* 모바일 */
-@media screen and (max-width: 503px) {
+@media screen and (max-width: 607px) {
   .header_wrap {
     width: 92%;
   }
@@ -423,6 +406,8 @@
   /* 섹션1 */
   .best_sect {
     width: 92%;
+    height: fit-content;
+    overflow: hidden;
   }
   h2 {
     text-align: center;
@@ -494,6 +479,7 @@
   }
   .books {
     width: 92%;
+    height: fit-content;
   }
   .banner_txt {
     margin-left: 0px;
@@ -509,12 +495,16 @@
   }
   /* 배너2 */
   .banner2 {
-    background-position: bottom;
+    font-size: 19px;
   }
-  .banner2_txt {
-    width: 92%;
-    padding: 45px 0px;
-    font-size: 1.1rem;
+  /* 높이때문에 팝업숨김 */
+  .heart_popup.heart_popup3,
+  .shopping_popup.shopping_popup3 {
+    display: none;
+  }
+  .heart_popup.heart_popup4,
+  .shopping_popup.shopping_popup4 {
+    display: none;
   }
   footer {
     height: fit-content;

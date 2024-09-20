@@ -14,9 +14,14 @@
     height: 279px;
     width: 100%;
   }
-
   .hot_inner_text {
     width: 100%;
+  }
+  .funding {
+    height: fit-content;
+  }
+  .heart_popup.heart_popup7 {
+    display: none;
   }
   .footer_con {
     width: 92%;
@@ -57,6 +62,12 @@
   .hot_img > img {
     transform-origin: left center;
     scale: 1.07;
+  }
+  .funding {
+    height: fit-content;
+  }
+  .heart_popup.heart_popup7 {
+    display: none;
   }
   .inner_bottom_text p {
     font-size: 17px;
@@ -110,6 +121,12 @@
   }
   .hot_inner_text {
     width: 100%;
+  }
+  .funding {
+    height: fit-content;
+  }
+  .heart_popup.heart_popup7 {
+    display: none;
   }
   .inner_bottom_text p {
     font-size: 17px;
@@ -169,6 +186,12 @@
     display: block;
     height: fit-content;
   }
+  .hot_content {
+    height: fit-content;
+  }
+  .heart_popup.heart_popup6 {
+    display: none;
+  }
   .hot_text {
     text-align: center;
   }
@@ -201,6 +224,12 @@
   }
   .funding_inner {
     row-gap: 0;
+  }
+  .funding {
+    height: fit-content;
+  }
+  .heart_popup.heart_popup7 {
+    display: none;
   }
   /* 푸터 */
   footer {
@@ -267,6 +296,13 @@
     display: block;
     height: fit-content;
   }
+  .hot_content {
+    height: fit-content;
+  }
+  .heart_popup.heart_popup6 {
+    display: none;
+  }
+
   .hot_text {
     text-align: center;
   }
@@ -296,6 +332,12 @@
 
   .hot_funding_con .hot_con:last-child {
     display: block;
+  }
+  .funding {
+    height: fit-content;
+  }
+  .heart_popup.heart_popup7 {
+    display: none;
   }
   .funding_inner {
     row-gap: 0;

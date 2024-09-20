@@ -32,7 +32,7 @@ $(function () {
     variableWidth: true,
     prevArrow: $("#prevBtn1"),
     nextArrow: $("#nextBtn1"),
-    speed: 1100,
+    speed: 800,
   });
   // 슬라이드 변경 이벤트
   $(".slide2").on("afterChange", function (event, slick, currentSlide) {

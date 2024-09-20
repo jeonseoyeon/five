@@ -13,6 +13,7 @@ $(function () {
       height: "0px",
     });
   });
+
   // 업버튼
   $(".up_button").on("click", function (event) {
     //a태그의 기본 이벤트 제거
@@ -40,5 +41,13 @@ $(function () {
   $(".x_blue_btn2, .cancle_btn2").on("click", function (event) {
     event.preventDefault();
     $(".shopping_popup").css("opacity", "0");
+  });
+
+  //반응형 모바일 햄버거 버튼
+  $(".moblie_menu_btn").on("click", function () {
+    $(".moblie_left_menu").css("display", "block");
+  });
+  $(".moblie_x_btn").on("click", function () {
+    $(".moblie_left_menu").css("display", "none");
   });
 });

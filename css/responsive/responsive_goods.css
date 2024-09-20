@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* 노트북 */
-@media screen and (min-width: 1210px) and (max-width: 1600px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
   .header_wrap {
     width: 92%;
   }
@@ -9,6 +9,25 @@
   }
   .goods {
     width: 92%;
+  }
+  .footer_con {
+    width: 92%;
+  }
+  .footer_t1 {
+    width: 57%;
+  }
+}
+/* 노트북 */
+@media screen and (min-width: 1208px) and (max-width: 1399px) {
+  .header_wrap {
+    width: 92%;
+  }
+  section {
+    width: 92%;
+  }
+  .goods {
+    width: 92%;
+    height: 2288px;
   }
   .footer_con {
     width: 92%;

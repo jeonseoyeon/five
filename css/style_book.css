@@ -202,7 +202,10 @@ h2 {
   width: fit-content;
   height: fit-content;
   position: relative;
-  transition: 0.5s;
+  transition: transform 0.4s;
+}
+.five_book_con:hover {
+  transform: translateY(-10px);
 }
 .five_book_img {
   width: 321px;
@@ -392,16 +395,11 @@ h2 {
 .banner2 {
   width: 100%;
   height: 120px;
-  background-image: url(./../img/sub_book/banner2.png);
-  background-repeat: no-repeat;
-}
-.banner2_txt {
-  width: 1600px;
-  margin: 0 auto;
+  text-align: center;
+  line-height: 120px;
   color: #fff;
-  box-sizing: border-box;
-  padding: 45px 265px;
+  letter-spacing: 0.4px;
   font-size: 22px;
   font-weight: 600;
-  letter-spacing: 0.4px;
+  background-color: #99b2e0;
 }
