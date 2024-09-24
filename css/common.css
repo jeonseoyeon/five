@@ -357,6 +357,7 @@ footer {
   position: absolute;
   top: 30px;
   right: 23px;
+  cursor: pointer;
 }
 /* 팝업창 wrap */
 .popup_wrap {
