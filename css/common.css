@@ -169,7 +169,7 @@ nav ul:hover .submenu {
   height: 100%;
   z-index: 50;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 901;
