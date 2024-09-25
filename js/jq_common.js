@@ -45,9 +45,9 @@ $(function () {
 
   //반응형 모바일 햄버거 버튼
   $(".moblie_menu_btn").on("click", function () {
-    $(".moblie_left_menu").css("display", "block");
+    $(".left_menu").css("display", "block");
   });
   $(".moblie_x_btn").on("click", function () {
-    $(".moblie_left_menu").css("display", "none");
+    $(".left_menu").css("display", "none");
   });
 });

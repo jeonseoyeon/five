@@ -164,6 +164,16 @@ nav ul:hover .submenu {
   background-position: -54px -245px;
 }
 /* 반응형 모바일 메뉴바 */
+.left_menu {
+  width: 100%;
+  height: 100%;
+  z-index: 901;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+}
 .moblie_left_menu {
   width: 420px;
   height: 100%;
@@ -172,9 +182,9 @@ nav ul:hover .submenu {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 901;
-  display: none;
-  box-shadow: -390px 0px 0px rgba(0, 0, 0, 0.75);
+  z-index: 902;
+  /* display: none; */
+  /* box-shadow: -390px 0px 0px rgba(0, 0, 0, 0.75); */
 }
 .moblie_left_menu a:hover {
   color: #7594cd;
@@ -227,6 +237,10 @@ nav ul:hover .submenu {
 }
 .m_img img {
   max-width: 100%;
+  cursor: pointer;
+}
+.moblie_x_btn {
+  cursor: pointer;
 }
 /* 반응형에서 나오는 버튼 */
 .moblie_menu_btn {
