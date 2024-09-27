@@ -256,7 +256,14 @@
   .moblie_menu_btn {
     display: block !important;
   }
-  /* 검색바 */
+  /* 검색바1 */
+  .search_top_box {
+    width: 80%;
+  }
+  .search_bottom_box {
+    width: 80%;
+  }
+  /* 검색바2 */
   .best_sect .search {
     width: 424px;
   }
@@ -399,7 +406,14 @@
   .moblie_menu_btn {
     display: block !important;
   }
-  /* 검색바 */
+  /* 검색바1 */
+  .search_top_box {
+    width: 80%;
+  }
+  .search_bottom_box {
+    width: 80%;
+  }
+  /* 검색바2 */
   .best_sect .search {
     width: 412px;
   }

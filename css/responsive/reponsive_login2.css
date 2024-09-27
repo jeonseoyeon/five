@@ -78,6 +78,13 @@
   .moblie_menu_btn {
     display: block !important;
   }
+  /* 검색바 */
+  .search_top_box {
+    width: 80%;
+  }
+  .search_bottom_box {
+    width: 80%;
+  }
   .login_con {
     width: 78%;
   }
@@ -128,6 +135,13 @@
   }
   .moblie_menu_btn {
     display: block !important;
+  }
+  /* 검색바 */
+  .search_top_box {
+    width: 80%;
+  }
+  .search_bottom_box {
+    width: 80%;
   }
   .login_con {
     width: 78%;
