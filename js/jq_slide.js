@@ -6,9 +6,9 @@ $(function () {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     arrows: false,
-    speed: 1200,
+    speed: 1300,
   });
 
   //메인비주얼 링크연결
